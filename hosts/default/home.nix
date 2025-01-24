@@ -16,8 +16,6 @@
   home.packages = with pkgs; [
     alacritty
     neovim
-    # pkgs.hello
-    # (pkgs.nerdfonts.override { fonts = [ "FantasqueSansMono" ]; })
   ];
 
   home.file = {
