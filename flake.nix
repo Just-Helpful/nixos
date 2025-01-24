@@ -26,7 +26,7 @@
       modules = [
         ({
           nixpkgs.overlays = with inputs; [
-            nur.overlay
+            nur.overlays.default
           ];
         })
         ./hosts/default/configuration.nix
