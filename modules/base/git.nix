@@ -8,6 +8,13 @@
       signByDefault = true;
     };
 
+    ignores = [
+      # Always ignore .env files, it'd be a security risk to include them
+      "**/.env"
+      # Allow a directory for temporary / scrap work
+      "scratch/"
+    ];
+
     extraConfig = {
       # merge by default
       pull.rebase = false;
