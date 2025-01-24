@@ -13,14 +13,23 @@
       url = "github:nix-community/nur";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    firefox = {
+      url = "github:nix-community/flake-firefox-nightly";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; system = "x86_64-linux"; };
       modules = [
+        ({
+          nixpkgs.overlays = with inputs; [
+            nur.overlay
+          ];
+        })
         ./hosts/default/configuration.nix
-	# inputs.nur.modules.nixos.default
       ];
     };
   };

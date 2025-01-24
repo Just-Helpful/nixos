@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ../../modules/base/gpg-patch.nix
       inputs.home-manager.nixosModules.default
     ];
 
@@ -90,10 +91,7 @@
   };
 
   # Allow unfree packages
-  nixpkgs = {
-    overlays = [ inputs.nur.overlays.default ];
-    config.allowUnfree = true;
-  };
+  nixpkgs.config.allowUnfree = true;
 
   home-manager = {
     useGlobalPkgs = true;

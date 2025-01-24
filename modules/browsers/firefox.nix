@@ -1,10 +1,10 @@
-{ pkgs, inputs, system, ... }:
-
-let
-  addons = pkgs.nur.repos.rycee.firefox-addons;
-in {
+{ pkgs, inputs, system, ... }: 
+{
   programs.firefox = {
     enable = true;
+    package = inputs.firefox.packages.${pkgs.system}.firefox-nightly-bin;
+
+    policies.DisablePocket = true;
 
     profiles.alexc = {
       search.force = true;
@@ -13,7 +13,7 @@ in {
         "Nix Packages" = {
           urls = [{
             template = "https://search.nixos.org/packages";
-	    params = [
+      	    params = [
               { name = "type"; value = "packages"; }
 	      { name = "query"; value = "{searchTerms}"; }
 	    ];
@@ -33,7 +33,7 @@ in {
 	};
       };
 
-      extensions = with addons; [
+      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
       ];
     };
   };
