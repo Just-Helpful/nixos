@@ -9,7 +9,7 @@
     settings = {
       font.normal.family = "MesloLGL Nerd Font";
       keyboard.bindings = [
-        { key = "Delete"; mods = "Control"; chars = "\u000c"; }
+        { key = "Delete"; mods = "Control"; chars = "\\u000c"; }
       ];
     };
   };
