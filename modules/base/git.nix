@@ -28,7 +28,7 @@
       rerere.enabled = true;
 
       # have the most recent branches on top when changing branch
-      sort = "-committerdate";
+      branch.sort = "-committerdate";
     };
   };
 
