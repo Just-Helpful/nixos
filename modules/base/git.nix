@@ -17,7 +17,7 @@
 
       # automatically add branches when pushing
       push.autoSetupRemote = true;
-      push.default = current;
+      push.default = "current";
 
       # nice colouring and line numbers while diffing
       diff.colorMoved = "default";
