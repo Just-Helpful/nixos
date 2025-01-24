@@ -7,6 +7,10 @@
       key = null;
       signByDefault = true;
     };
+
+    extraConfig = {
+      pull.rebase = false;
+    };
   };
 
   programs.gh = {
