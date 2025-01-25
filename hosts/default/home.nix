@@ -15,7 +15,6 @@
   # environment.
   home.packages = with pkgs; [
     alacritty
-    neovim
   ];
 
   home.file = {
