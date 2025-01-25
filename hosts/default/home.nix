@@ -8,6 +8,8 @@
     ../../modules/terminal
   ];
 
+  formatter.${pkgs.system} = pkgs.nixpkgs-fmt;
+
   home.username = "alexc";
   home.homeDirectory = "/home/alexc";
 
