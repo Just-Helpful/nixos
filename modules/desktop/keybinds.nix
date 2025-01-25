@@ -1,4 +1,5 @@
 { ... }: {
+  dconf.enable = true;
   dconf.settings = {
     "org/gnome/desktop/wm/keybindings" = {
       # Close windows easier

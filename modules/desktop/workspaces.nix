@@ -1,4 +1,5 @@
 { ... }: {
+  dconf.enable = true;
   dconf.settings = {
     "org/gnome/mutter" = {
       dynamic-workspaces = true;
