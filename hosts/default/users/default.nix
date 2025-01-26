@@ -1,4 +1,10 @@
-{ inputs, system, pkgs, ... }: {
+{
+  inputs,
+  system,
+  pkgs,
+  ...
+}:
+{
   users.users.alexc = {
     isNormalUser = true;
     description = "Alex Colby";

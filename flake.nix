@@ -40,7 +40,7 @@
     {
       # formatting for this flake, using treefmt and nixfmt-rfc-style
       formatter.${system} = treefmt.config.build.wrapper;
-      checks.${system}.formatting = treefmt.config.build.check self; 
+      checks.${system}.formatting = treefmt.config.build.check self;
 
       # the actual nixos configuration
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
