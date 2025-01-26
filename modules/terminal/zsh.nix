@@ -21,7 +21,7 @@
 
     shellAliases = {
       nixos-config = "$EDITOR $NIXOS_CONFIG";
-      nixos-update = "nixos-rebuild switch --use-remote-sudo --flake $NIXOS_CONFIG#default";
+      nixos-update = "nixos-rebuild switch --use-remote-sudo --upgrade --flake $NIXOS_CONFIG#default";
     };
   };
 }
