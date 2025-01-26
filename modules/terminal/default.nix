@@ -1,7 +1,8 @@
-{ ... }: {
+{ ... }:
+{
   imports = [
     ./zsh.nix
-    ./nvim.nix
+    ./nvim
     ./alacritty.nix
     ./starship.nix
     ./fonts.nix

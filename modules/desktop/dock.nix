@@ -1,9 +1,10 @@
-{ ... }: {
+{ ... }:
+{
   imports = [
     ../terminal/alacritty.nix
     ../browsers/firefox.nix
   ];
-  
+
   dconf.enable = true;
   dconf.settings = {
     "org/gnome/shell".favorite-apps = [

@@ -1,19 +1,26 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, inputs, pkgs, system, ... }:
-
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ../../modules/base/gpg-patch.nix
-      inputs.home-manager.nixosModules.default
-    ];
+  config,
+  inputs,
+  pkgs,
+  system,
+  ...
+}:
+{
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    ../../modules/base/gpg-patch.nix
+    inputs.home-manager.nixosModules.default
+  ];
 
   # Features
-  nix.settings.experimental-features = ["nix-command" "flakes"];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -84,8 +91,11 @@
   users.users.alexc = {
     isNormalUser = true;
     description = "Alex Colby";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+    packages = with pkgs; [ ];
     shell = pkgs.zsh;
   };
 
@@ -105,12 +115,8 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    wl-clipboard
-  ];
-  environment.pathsToLink = [
-    "/share/zsh"
-  ];
+  environment.systemPackages = with pkgs; [ wl-clipboard ];
+  environment.pathsToLink = [ "/share/zsh" ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

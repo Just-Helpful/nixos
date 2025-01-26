@@ -25,17 +25,19 @@
     };
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
-    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
-      specialArgs = { inherit inputs; system = "x86_64-linux"; };
-      modules = [
-        ({
-          nixpkgs.overlays = with inputs; [
-            nur.overlays.default
-          ];
-        })
-        ./hosts/default/configuration.nix
-      ];
+  outputs =
+    { self, nixpkgs, ... }@inputs:
+    let
+      system = "x86_64-linux";
+    in
+    {
+      formatter.${system} = nixpkgs.legacyPackages.${system}.nixfmt-rfc-style;
+      nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs system; };
+        modules = [
+          { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
+          ./hosts/default/configuration.nix
+        ];
+      };
     };
-  };
 }
