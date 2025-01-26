@@ -11,13 +11,15 @@
 {
   imports = [
     # Include the results of the hardware scan.
-    ./hardware-configuration.nix
+    ./hardware.nix
+    ./users.nix
     ../../modules/base/gpg-patch.nix
     inputs.home-manager.nixosModules.default
   ];
 
   # Features
   nix.settings.experimental-features = [
+    "pipe-operators"
     "nix-command"
     "flakes"
   ];
@@ -88,54 +90,15 @@
     #media-session.enable = true;
   };
 
-  users.users.alexc = {
-    isNormalUser = true;
-    description = "Alex Colby";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-    ];
-    packages = with pkgs; [ ];
-    shell = pkgs.zsh;
-  };
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  home-manager = {
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    backupFileExtension = "backup";
-    extraSpecialArgs = { inherit inputs system; };
-    users.alexc = import ./home.nix;
-  };
 
   # Install base programs.
   programs.zsh.enable = true;
 
   # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [ wl-clipboard ];
   environment.pathsToLink = [ "/share/zsh" ];
-
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-
-  # List services that you want to enable:
-
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
 
   system.stateVersion = "24.11";
 }
