@@ -28,8 +28,6 @@
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    flake-root.url = "github:srid/flake-root";
   };
 
   outputs =
@@ -40,12 +38,16 @@
       treefmt = treefmtBuilder ./.github/config/treefmt.nix;
     in
     {
+      # formatting for this flake, using treefmt and nixfmt-rfc-style
       formatter.${system} = treefmt.config.build.wrapper;
+      checks.${system}.formatting = treefmt.config.build.check self; 
+
+      # the actual nixos configuration
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs system; };
         modules = [
           { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
-          ./hosts/default/configuration.nix
+          ./hosts/default
         ];
       };
     };
