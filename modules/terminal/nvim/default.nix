@@ -1,15 +1,24 @@
-{ inputs, ... }:
-{
-  imports = [ inputs.nvf.homeManagerModules.default ];
+{inputs, ...}: {
+  imports = [inputs.nvf.homeManagerModules.default];
 
   # Neovim flake options
   # mostly sourced from the default [config](https://github.com/NotAShelf/nvf/blob/main/configuration.nix)
   programs.nvf.enable = true;
   programs.nvf.settings.vim = {
+    # Command line config
     # Only allow `nvim` command
     viAlias = false;
     vimAlias = false;
 
+    # Visual config
+    theme = {
+      enable = true;
+      name = "tokyonight";
+      style = "night";
+      transparent = true;
+    };
+
+    # Buffer config
     lsp = {
       formatOnSave = true;
       lightbulb.enable = true;
@@ -27,15 +36,6 @@
       markdown.enable = true;
     };
 
-    autocomplete.nvim-cmp = {
-      enable = true;
-    };
-
-    theme = {
-      enable = true;
-      name = "tokyonight";
-      style = "night";
-      transparent = true;
-    };
+    autocomplete.nvim-cmp.enable = true;
   };
 }
