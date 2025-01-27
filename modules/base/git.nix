@@ -8,6 +8,9 @@
       key = null;
       signByDefault = true;
     };
+    aliases = {
+      undo = "reset HEAD~";
+    };
 
     ignores = [
       # Always ignore .env files, it'd be a security risk to include them
