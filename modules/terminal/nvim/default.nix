@@ -17,5 +17,12 @@
     autocomplete.nvim-cmp = {
       enable = true;
     };
+
+    theme = {
+      enable = true;
+      name = "tokyonight";
+      style = "night";
+      transparent = true;
+    };
   };
 }
