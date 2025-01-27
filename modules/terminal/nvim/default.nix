@@ -42,6 +42,8 @@
       shiftwidth = 0;
     };
 
+    ui.illuminate.enable = true;
+
     lsp = {
       formatOnSave = true;
       lightbulb.enable = true;
@@ -49,8 +51,6 @@
       lspSignature.enable = true;
       # maybe enable otter.nvim: lsp for README blocks
     };
-
-    ui.illuminate.enable = true;
 
     languages = {
       enableLSP = true;
