@@ -25,6 +25,7 @@
 
     # File navigation
     filetree.neo-tree.enable = true;
+    tabline.nvimBufferline.enable = true;
 
     # Buffer config
     lsp = {
