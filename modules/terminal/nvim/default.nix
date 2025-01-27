@@ -18,6 +18,11 @@
       transparent = true;
     };
 
+    statusline.lualine = {
+      enable = true;
+      theme = "tokyonight";
+    };
+
     # File navigation
     filetree.neo-tree.enable = true;
 
