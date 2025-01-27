@@ -63,5 +63,7 @@
       gitsigns.enable = true;
       gitsigns.codeActions.enable = true;
     };
+
+    terminal.toggleterm.enable = true;
   };
 }
