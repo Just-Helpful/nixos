@@ -18,6 +18,8 @@
       transparent = true;
     };
 
+    ui.noice.enable = true;
+
     statusline.lualine = {
       enable = true;
       theme = "tokyonight";
