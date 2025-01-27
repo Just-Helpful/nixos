@@ -17,6 +17,16 @@
       # maybe enable otter.nvim: lsp for README blocks
     };
 
+    languages = {
+      enableLSP = true;
+      enableFormat = true;
+      enableTreesitter = true;
+      enableExtraDiagnostics = true;
+
+      nix.enable = true;
+      markdown.enable = true;
+    };
+
     autocomplete.nvim-cmp = {
       enable = true;
     };
