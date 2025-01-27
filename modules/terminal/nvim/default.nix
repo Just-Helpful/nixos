@@ -10,7 +10,7 @@
     viAlias = false;
     vimAlias = false;
 
-    # Visual config
+    # Visuals
     theme = {
       enable = true;
       name = "tokyonight";
@@ -27,7 +27,7 @@
     filetree.neo-tree.enable = true;
     tabline.nvimBufferline.enable = true;
 
-    # Buffer config
+    # Buffer editing
     lsp = {
       formatOnSave = true;
       lightbulb.enable = true;
