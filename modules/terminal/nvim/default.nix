@@ -42,6 +42,7 @@
       shiftwidth = 0;
     };
 
+    visuals.nvim-scrollbar.enable = true;
     ui.illuminate.enable = true;
 
     lsp = {
