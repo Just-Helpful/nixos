@@ -23,6 +23,12 @@
       theme = "tokyonight";
     };
 
+    # Hotkeys
+    binds = {
+      whichKey.enable = true;
+      cheatsheet.enable = true;
+    };
+
     # File navigation
     filetree.neo-tree.enable = true;
     tabline.nvimBufferline.enable = true;
