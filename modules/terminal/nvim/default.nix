@@ -43,7 +43,10 @@
     };
 
     ui.illuminate.enable = true;
-    visuals.nvim-scrollbar.enable = true;
+    visuals = {
+      fidget-nvim.enable = true;
+      nvim-scrollbar.enable = true;
+    };
 
     lsp = {
       formatOnSave = true;
