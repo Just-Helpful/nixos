@@ -36,6 +36,11 @@
     tabline.nvimBufferline.enable = true;
 
     # Buffer editing
+    options = {
+      tabstop = 2;
+      shiftwidth = 0;
+    };
+
     lsp = {
       formatOnSave = true;
       lightbulb.enable = true;
