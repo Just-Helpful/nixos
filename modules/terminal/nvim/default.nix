@@ -46,6 +46,7 @@
     visuals = {
       fidget-nvim.enable = true;
       nvim-scrollbar.enable = true;
+      indent-blankline.enable = true;
     };
 
     lsp = {
