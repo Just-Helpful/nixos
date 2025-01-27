@@ -11,7 +11,10 @@
     vimAlias = false;
 
     lsp = {
-      # formatOnSave = true;
+      formatOnSave = true;
+      lightbulb.enable = true;
+      trouble.enable = true;
+      # maybe enable otter.nvim: lsp for README blocks
     };
 
     autocomplete.nvim-cmp = {
