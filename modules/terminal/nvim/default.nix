@@ -18,6 +18,9 @@
       transparent = true;
     };
 
+    # File navigation
+    filetree.neo-tree.enable = true;
+
     # Buffer config
     lsp = {
       formatOnSave = true;
