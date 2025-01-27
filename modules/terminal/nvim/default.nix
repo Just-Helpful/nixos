@@ -52,5 +52,12 @@
     };
 
     autocomplete.nvim-cmp.enable = true;
+
+    # Committing changes
+    git = {
+      enable = true;
+      gitsigns.enable = true;
+      gitsigns.codeActions.enable = true;
+    };
   };
 }
