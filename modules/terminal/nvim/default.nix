@@ -45,6 +45,7 @@
       formatOnSave = true;
       lightbulb.enable = true;
       trouble.enable = true;
+      lspSignature.enable = true;
       # maybe enable otter.nvim: lsp for README blocks
     };
 
