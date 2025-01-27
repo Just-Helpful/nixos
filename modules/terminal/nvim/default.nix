@@ -43,6 +43,8 @@
       # maybe enable otter.nvim: lsp for README blocks
     };
 
+    ui.illuminate.enable = true;
+
     languages = {
       enableLSP = true;
       enableFormat = true;
