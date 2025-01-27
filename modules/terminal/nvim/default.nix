@@ -34,6 +34,7 @@
     # File navigation
     filetree.neo-tree.enable = true;
     tabline.nvimBufferline.enable = true;
+    visuals.nvim-web-devicons.enable = true;
 
     # Buffer editing
     options = {
