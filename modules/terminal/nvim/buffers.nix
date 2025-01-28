@@ -27,7 +27,10 @@ _: {
       enableTreesitter = true;
       enableExtraDiagnostics = true;
 
-      nix.enable = true;
+      nix = {
+        enable = true;
+        format.type = "nixfmt";
+      };
       markdown.enable = true;
     };
 
