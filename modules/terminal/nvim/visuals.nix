@@ -9,7 +9,10 @@ _: {
       transparent = true;
     };
 
-    ui.noice.enable = true;
+    ui = {
+      borders.enable = true;
+      noice.enable = true;
+    };
     notify.nvim-notify.enable = true;
 
     statusline.lualine = {
