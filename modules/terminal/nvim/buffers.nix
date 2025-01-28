@@ -2,15 +2,15 @@
 _: {
   programs.nvf.enable = true;
   programs.nvf.settings.vim = {
-    options = {
-      tabstop = 2;
-      shiftwidth = 0;
-    };
-
     ui.illuminate.enable = true;
     visuals = {
       nvim-scrollbar.enable = true;
       indent-blankline.enable = true;
+    };
+
+    options = {
+      tabstop = 2;
+      shiftwidth = 0;
     };
 
     lsp = {
