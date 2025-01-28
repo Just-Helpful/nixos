@@ -1,9 +1,5 @@
 # Visuals
-{inputs, ...}: {
-  imports = [
-    inputs.nvf.homeManagerModules.default
-  ];
-
+_: {
   programs.nvf.enable = true;
   programs.nvf.settings.vim = {
     theme = {

@@ -1,9 +1,5 @@
 # Version management
-{inputs, ...}: {
-  imports = [
-    inputs.nvf.homeManagerModules.default
-  ];
-
+_: {
   programs.nvf.enable = true;
   programs.nvf.settings.vim = {
     git = {
