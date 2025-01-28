@@ -2,7 +2,10 @@
 _: {
   programs.nvf.enable = true;
   programs.nvf.settings.vim = {
-    ui.illuminate.enable = true;
+    ui = {
+      illuminate.enable = true;
+      fastaction.enable = true;
+    };
     visuals = {
       nvim-scrollbar.enable = true;
       indent-blankline.enable = true;
