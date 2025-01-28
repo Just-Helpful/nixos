@@ -69,7 +69,7 @@
 
     autocomplete.nvim-cmp.enable = true;
 
-    # Committing changes
+    # Version management
     git = {
       enable = true;
       gitsigns.enable = true;
