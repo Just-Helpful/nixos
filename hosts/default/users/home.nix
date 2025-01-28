@@ -13,6 +13,7 @@
     packages = with pkgs; [
       alacritty
       treefmt2
+      gnome-tweaks
     ];
 
     file = { };
