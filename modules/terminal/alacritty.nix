@@ -1,5 +1,4 @@
-{ ... }:
-{
+_: {
   imports = [ ./fonts.nix ];
 
   programs.alacritty = {

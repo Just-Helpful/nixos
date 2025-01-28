@@ -1,6 +1,7 @@
 # Neovim flake options
 # mostly sourced from the default [config](https://github.com/NotAShelf/nvf/blob/main/configuration.nix)
-{inputs, ...}: {
+{ inputs, ... }:
+{
   imports = [
     ./files.nix
     ./buffers.nix

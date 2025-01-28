@@ -2,5 +2,7 @@
 {
   fonts.fontconfig.enable = true;
 
-  home.packages = with pkgs; [ pkgs.nerd-fonts.meslo-lg ];
+  home.packages = with pkgs; [
+    nerd-fonts.meslo-lg
+  ];
 }

@@ -1,5 +1,4 @@
-{ ... }:
-{
+_: {
   imports = [
     ./base
     ./browsers

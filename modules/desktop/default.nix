@@ -1,5 +1,4 @@
-{ ... }:
-{
+_: {
   imports = [
     ./dock.nix
     ./themes.nix

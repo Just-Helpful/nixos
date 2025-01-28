@@ -31,7 +31,11 @@
   };
 
   outputs =
-    { self, nixpkgs, ... }@inputs:
+    {
+      self,
+      nixpkgs,
+      ...
+    }@inputs:
     let
       system = "x86_64-linux";
       treefmtBuilder = inputs.treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system};

@@ -1,5 +1,4 @@
-{ ... }:
-{
+_: {
   imports = [
     ./zsh.nix
     ./nvim
