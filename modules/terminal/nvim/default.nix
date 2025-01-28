@@ -19,6 +19,7 @@
     };
 
     ui.noice.enable = true;
+    notify.nvim-notify.enable = true;
 
     statusline.lualine = {
       enable = true;
