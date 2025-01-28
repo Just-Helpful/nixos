@@ -10,6 +10,7 @@ _: {
       nvim-scrollbar.enable = true;
       indent-blankline.enable = true;
     };
+    autopairs.nvim-autopairs.enable = true;
 
     options = {
       tabstop = 2;
