@@ -9,6 +9,7 @@ _: {
     };
     aliases = {
       undo = "reset HEAD~";
+      graph = "log --graph --oneline --decorate --all";
     };
 
     ignores = [
