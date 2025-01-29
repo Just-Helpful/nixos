@@ -20,8 +20,9 @@ _: {
     syntaxHighlighting.enable = true;
 
     shellAliases = {
-      nixos-config = "$EDITOR $NIXOS_CONFIG";
+      reload = "source $ZDOTDIR/.zshrc";
       nixos-update = "nixos-rebuild switch --use-remote-sudo --upgrade --flake $NIXOS_CONFIG#default";
+      nixos-config = "$EDITOR $NIXOS_CONFIG";
     };
   };
 }
