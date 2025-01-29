@@ -22,14 +22,20 @@ _: {
       # Buffer navigation
       {
         key = "<A-Left>";
-        mode = [ "n" ];
+        mode = [
+          "n"
+          "i"
+        ];
         action = "<cmd>bprevious<CR>";
         silent = true;
         desc = "Prev Buffer";
       }
       {
         key = "<A-Right>";
-        mode = [ "n" ];
+        mode = [
+          "n"
+          "i"
+        ];
         action = "<cmd>bnext<CR>";
         silent = true;
         desc = "Next Buffer";
@@ -38,14 +44,20 @@ _: {
       # Moving lines
       {
         key = "<A-Up>";
-        mode = [ "n" ];
+        mode = [
+          "n"
+          "i"
+        ];
         action = "<cmd>m-2<CR>";
         silent = true;
         desc = "Move Line Up";
       }
       {
         key = "<A-Down>";
-        mode = [ "n" ];
+        mode = [
+          "n"
+          "i"
+        ];
         action = "<cmd>m+<CR>";
         silent = true;
         desc = "Move Line Down";
