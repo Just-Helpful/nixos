@@ -15,7 +15,7 @@
     ./network.nix
     ./localisation.nix
     # Patch gnome keyring to allow gpg agent
-    ../../modules/base/gpg-patch.nix
+    ../../modules/tools/gpg-patch.nix
     # Start home manager
     inputs.home-manager.nixosModules.default
   ];
