@@ -8,7 +8,15 @@ _: {
     };
 
     keymaps = [
-      # Tab navigation
+      # Buffer management
+      {
+        key = "<C-s>";
+        mode = [ "n" ];
+        action = "<cmd>w<CR>";
+        desc = "Save buffer";
+      }
+
+      # Buffer navigation
       {
         key = "<A-Left>";
         mode = [ "n" ];
