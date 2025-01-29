@@ -17,6 +17,7 @@ _: {
     autocd = true;
     autosuggestion.enable = true;
     enableCompletion = true;
+    syntaxHighlighting.enable = true;
 
     shellAliases = {
       nixos-config = "$EDITOR $NIXOS_CONFIG";
