@@ -11,7 +11,10 @@ _: {
       # Buffer management
       {
         key = "<C-s>";
-        mode = [ "n" ];
+        mode = [
+          "n"
+          "i"
+        ];
         action = "<cmd>w<CR>";
         desc = "Save buffer";
       }
