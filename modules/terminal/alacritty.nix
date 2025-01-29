@@ -1,5 +1,5 @@
 _: {
-  imports = [ ./fonts.nix ];
+  imports = [ ../themes/fonts.nix ];
 
   programs.alacritty = {
     enable = true;

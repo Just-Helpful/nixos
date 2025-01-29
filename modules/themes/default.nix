@@ -1,3 +1,6 @@
 _: {
-  imports = [ ./gtk.nix ];
+  imports = [
+    ./gtk.nix
+    ./fonts.nix
+  ];
 }
