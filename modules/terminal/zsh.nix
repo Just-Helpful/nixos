@@ -11,6 +11,7 @@ _: {
 
     # config files
     dotDir = ".config/zsh/";
+    history.path = "$ZDOTDIR/.history";
 
     # automatic tooling
     autocd = true;
