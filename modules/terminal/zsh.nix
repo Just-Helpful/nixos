@@ -26,8 +26,5 @@ _: {
     };
   };
 
-  programs.nix-your-shell = {
-    enable = true;
-    enableZshIntegration = true;
-  };
+  programs.nix-your-shell.enable = true;
 }
