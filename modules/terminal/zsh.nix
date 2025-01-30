@@ -25,4 +25,9 @@ _: {
       nixos-config = "$EDITOR $NIXOS_CONFIG";
     };
   };
+
+  programs.nix-your-shell = {
+    enable = true;
+    enableZshIntegration = true;
+  };
 }
