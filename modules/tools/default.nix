@@ -11,6 +11,6 @@
   ];
 
   home.packages = with pkgs; [
-    yq
+    yq-go
   ];
 }
