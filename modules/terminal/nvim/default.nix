@@ -8,6 +8,7 @@
     ./visuals.nix
     ./commands.nix
     ./keybinds.nix
+    ./languages.nix
     ./versioning.nix
     inputs.nvf.homeManagerModules.default
   ];
