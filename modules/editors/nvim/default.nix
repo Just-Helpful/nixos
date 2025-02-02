@@ -14,4 +14,7 @@
   ];
 
   programs.nvf.enable = true;
+  home.sessionVariables = {
+    EDITOR = "nvim";
+  };
 }

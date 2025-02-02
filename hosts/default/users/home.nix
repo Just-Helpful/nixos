@@ -17,10 +17,6 @@
 
     file = { };
 
-    sessionVariables = {
-      EDITOR = "nvim";
-    };
-
     stateVersion = "24.11";
   };
 }
