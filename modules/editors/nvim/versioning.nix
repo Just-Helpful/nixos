@@ -2,7 +2,6 @@
 _: {
   imports = [ ../../tools/git.nix ];
 
-  programs.nvf.enable = true;
   programs.nvf.settings.vim = {
     git = {
       enable = true;

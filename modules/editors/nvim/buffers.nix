@@ -1,6 +1,5 @@
 # Buffer editing
 _: {
-  programs.nvf.enable = true;
   programs.nvf.settings.vim = {
     ui = {
       illuminate.enable = true;
