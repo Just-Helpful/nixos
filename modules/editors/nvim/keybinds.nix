@@ -20,7 +20,7 @@ _: {
 
       # Buffer navigation
       {
-        key = "<A-Left>";
+        key = "<S-Left>";
         mode = [
           "n"
           "i"
@@ -30,7 +30,7 @@ _: {
         desc = "Prev Buffer";
       }
       {
-        key = "<A-Right>";
+        key = "<S-Right>";
         mode = [
           "n"
           "i"
