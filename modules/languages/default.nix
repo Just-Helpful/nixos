@@ -9,5 +9,8 @@
 # I might install `scala` because I like the language, but it probably
 # won't see much usage in full-fat projects as I'm just more used to others.
 _: {
-  imports = [ ./rust.nix ];
+  imports = [
+    ./rust.nix
+    ./node.nix
+  ];
 }
