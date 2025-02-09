@@ -39,6 +39,13 @@ _: {
         silent = true;
         desc = "Next Buffer";
       }
+      {
+        key = "<S-w>";
+        mode = [
+          "n"
+        ];
+        action = "<cmd>bdelete<CR><cmd>bprevious<CR>";
+      }
 
       # Moving lines
       {
