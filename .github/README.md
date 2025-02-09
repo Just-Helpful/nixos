@@ -11,7 +11,7 @@ NixOS configuration for a personal laptop, heavily inspired by vimjoyer
 
 - [x] Move `~/.rustup/` directory
 - [x] Add a `:bdelete` keybind to nvim
-- [ ] Document the `themes` module properly
+- [x] Document the `themes` module properly
 - [ ] Find how to use npm global installs
 - [x] Add nodejs support
 - [x] Add sources to README
