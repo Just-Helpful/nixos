@@ -9,6 +9,7 @@ NixOS configuration for a personal laptop, heavily inspired by vimjoyer
 
 ### `2025-02-09`
 
+- [ ] Add nodejs support
 - [x] Add sources to README
 - [ ] Add reproduction guide
 
