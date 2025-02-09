@@ -61,3 +61,5 @@ There's really quite a lot of sources I've used for this:
   setup
 - [Nix Packages](https://search.nixos.org/packages?type=packages&channel=unstable)
   for available packages
+- [Nix Pills](https://nixos.org/guides/nix-pills/17-nixpkgs-overriding-packages.html)
+  for package overrides
