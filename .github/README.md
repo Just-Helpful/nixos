@@ -9,7 +9,7 @@ NixOS configuration for a personal laptop, heavily inspired by vimjoyer
 
 ### `2025-02-09`
 
-- [ ] Add a `:bdelete` keybind to nvim
+- [x] Add a `:bdelete` keybind to nvim
 - [ ] Document the `themes` module properly
 - [ ] Find how to use npm global installs
 - [x] Add nodejs support
