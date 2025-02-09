@@ -29,7 +29,7 @@ _: {
         # Step 2. `flake lock` and commit changes
         nix flake update --flake $NIXOS_CONFIG
         git -C $NIXOS_CONFIG add flake.lock
-        git -C $NIXOS_CONFIG commit -m "chore: updates `flake.lock`"
+        git -C $NIXOS_CONFIG commit -m "chore: updates \`flake.lock\`"
 
         # Step 3. Restore stashed changes
         git -C $NIXOS_CONFIG stash pop
