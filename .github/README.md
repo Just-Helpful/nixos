@@ -9,7 +9,7 @@ NixOS configuration for a personal laptop, heavily inspired by vimjoyer
 
 ### `2025-02-09`
 
-- [ ] Add citations to README
+- [x] Add sources to README
 - [ ] Add reproduction guide
 
 ---
@@ -45,3 +45,14 @@ in your `home.nix` to include _all_ of the modules.
 For the most part, modules defined here can and will likely change with my
 config. I don't currently define any config options when defining these modules
 as again, I'm only using these modules for one device at the moment.
+
+## Sources
+
+There's really quite a lot of sources I've used for this:
+
+- [NVF](https://github.com/NotAShelf/nvf/tree/main) for both configuring neovim
+  and its beautiful README
+- [NixOS Wiki](https://nixos.wiki/wiki/Main_Page) for common package and config
+  setup
+- [Nix Packages](https://search.nixos.org/packages?type=packages&channel=unstable)
+  for available packages
