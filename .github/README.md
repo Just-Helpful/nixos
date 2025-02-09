@@ -3,11 +3,10 @@
 NixOS configuration for a personal laptop, heavily inspired by vimjoyer
 
 <details>
----
 <summary>
-> [!NOTE]
-> Changelog and Todos
+**Changelog and Todos**
 </summary>
+---
 
 ## `2025-02-09`
 
