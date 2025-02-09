@@ -19,10 +19,32 @@ _: {
     enableCompletion = true;
     syntaxHighlighting.enable = true;
 
+    # Primarily used to make nixos config updates easier
+    initExtra = ''
+      # Updates the versions of packages in `flake.lock`
+      nixup-flake() {
+        # Step 1. Stash any existing changes
+        git -C $NIXOS_CONFIG stash push
+
+        # Step 2. `flake lock` and commit changes
+        nix flake update --flake $NIXOS_CONFIG
+        git -C $NIXOS_CONFIG add flake.lock
+        git -C $NIXOS_CONFIG commit -m "chore: updates `flake.lock`"
+
+        # Step 3. Restore stashed changes
+        git -C $NIXOS_CONFIG stash pop
+      }
+
+      # Updates the nixos config used to build
+      nixup-config() {
+        nixos-rebuild switch --use-remote-sudo --upgrade --flake $NIXOS_CONFIG#default
+      }
+    '';
+
     shellAliases = {
       reload = "source $ZDOTDIR/.zshrc";
       nixrc = "$EDITOR $NIXOS_CONFIG";
-      nixup = "nix flake update --flake $NIXOS_CONFIG && nixos-rebuild switch --use-remote-sudo --upgrade --flake $NIXOS_CONFIG#default";
+      nixup = "nixup-flake && nixup-config";
     };
   };
 
