@@ -2,6 +2,22 @@
 
 NixOS configuration for a personal laptop, heavily inspired by vimjoyer
 
+<details>
+---
+<summary>
+> [!NOTE]
+> Changelog and Todos
+</summary>
+
+## `2025-02-09`
+
+- [ ] Add citations to README
+- [ ] Add reproduction guide
+
+---
+
+</details>
+
 ## Layout
 
 This computer setup is defined via a flake based config and keeps the
