@@ -24,7 +24,7 @@ _: {
       # Updates the versions of packages in `flake.lock`
       nixup-flake() {
         nix flake update --flake $NIXOS_CONFIG
-        git -C $NIXOS_CONFIG commit -m "chore: updates \`flake.lock\`" -q --only -- flake.lock
+        git -C $NIXOS_CONFIG commit -m "chore: updates \`flake.lock\`" --only -- flake.lock > /dev/null
       }
 
       # Updates the nixos config used to build
