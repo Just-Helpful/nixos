@@ -5,5 +5,8 @@
 #
 # If you see vscode here, there weren't any improvements... :P
 _: {
-  imports = [ ./nvim ];
+  imports = [
+    ./nvim
+    ./vscode.nix
+  ];
 }
