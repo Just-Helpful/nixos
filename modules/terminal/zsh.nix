@@ -22,7 +22,7 @@ _: {
     shellAliases = {
       reload = "source $ZDOTDIR/.zshrc";
       nixrc = "$EDITOR $NIXOS_CONFIG";
-      nixup = "nixos-rebuild switch --use-remote-sudo --upgrade --flake $NIXOS_CONFIG#default";
+      nixup = "nix flake update --flake $NIXOS_CONFIG && nixos-rebuild switch --use-remote-sudo --upgrade --flake $NIXOS_CONFIG#default";
     };
   };
 
