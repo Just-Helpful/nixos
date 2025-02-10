@@ -9,6 +9,7 @@ NixOS configuration for a personal laptop, heavily inspired by vimjoyer
 
 ### `2025-02-10`
 
+- [ ] Add scheduled gc and deduping
 - [ ] Find how to use npm global installs
 - [ ] Add reproduction guide
 
