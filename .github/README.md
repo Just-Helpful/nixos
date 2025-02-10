@@ -7,6 +7,11 @@ NixOS configuration for a personal laptop, heavily inspired by vimjoyer
 <b>Changelog and Todos</b>
 </summary>
 
+### `2025-02-10`
+
+- [ ] Find how to use npm global installs
+- [ ] Add reproduction guide
+
 ### `2025-02-09`
 
 - [x] Move `~/.rustup/` directory
