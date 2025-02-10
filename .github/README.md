@@ -72,8 +72,23 @@ Gnome disk image program<br/> allowing the installation over an existing install
 ### 2. Create Nix Flake
 
 In order to make the nix config more reproducible between devices,<br/> I've
-used a `flake.lock`. This can be acheived using a minimal `flake.nix`<br/> that
-simply calls the `configuration.nix`:
+used a simple nix flake. In order to use flakes, you'll first<br/> need to
+enable them in your `configuration.nix` as so:
+
+```nix
+# configuration.nix
+{ pkgs, ... }: {
+    # ...
+    nix.settings.experimental-features = [
+        "flakes"
+        # you'll likely also want to enable extra `nix` commands
+        "nix-command"
+    ]
+    # ...
+}
+```
+
+Then we can create a minimal `flake.nix` that includes the `configuration.nix`:
 
 ```nix
 # flake.nix
