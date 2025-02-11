@@ -2,6 +2,7 @@
 
 ## `2025-02-11`
 
+- [ ] Add keybinds to duplicate lines
 - [ ] Add "Restructure Config" to guide
 - [ ] Find how to use npm global installs
 
