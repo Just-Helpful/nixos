@@ -7,6 +7,11 @@ NixOS configuration for a personal laptop, heavily inspired by vimjoyer
 <b>Changelog and Todos</b>
 </summary>
 
+### `2025-02-11`
+
+- [ ] Add "Restructure Config" to guide
+- [ ] Find how to use npm global installs
+
 ### `2025-02-10`
 
 - [ ] Add "Restructure Config" to guide
