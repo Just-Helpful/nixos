@@ -2,36 +2,7 @@
 
 NixOS configuration for a personal laptop, heavily inspired by vimjoyer
 
-<details>
-<summary>
-<b>Changelog and Todos</b>
-</summary>
-
-### `2025-02-11`
-
-- [ ] Add "Restructure Config" to guide
-- [ ] Find how to use npm global installs
-
-### `2025-02-10`
-
-- [ ] Add "Restructure Config" to guide
-- [x] Add scheduled gc and deduping
-- [ ] Find how to use npm global installs
-- [x] Add reproduction guide
-
-### `2025-02-09`
-
-- [x] Move `~/.rustup/` directory
-- [x] Add a `:bdelete` keybind to nvim
-- [x] Document the `themes` module properly
-- [ ] Find how to use npm global installs
-- [x] Add nodejs support
-- [x] Add sources to README
-- [ ] Add reproduction guide
-
----
-
-</details>
+[**Changelog and Todos**](./Changelog.md)
 
 ## Layout
 
