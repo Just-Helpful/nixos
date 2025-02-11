@@ -2,7 +2,7 @@
 
 ## `2025-02-11`
 
-- [ ] Add `pnpm`
+- [x] Add `pnpm`
 - [x] Add keybinds to duplicate lines
 - [ ] Add "Restructure Config" to guide
 - [x] Find how to use npm global installs
