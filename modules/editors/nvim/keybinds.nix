@@ -68,6 +68,26 @@ _: {
         silent = true;
         desc = "Move Line Down";
       }
+
+      # Duplicating lines
+      {
+        key = "<A-S-Up>";
+        mode = [
+          "n"
+          "i"
+        ];
+        action = "\"zyyk\"zp";
+        desc = "Copy Line Up";
+      }
+      {
+        key = "<A-S-Down>";
+        mode = [
+          "n"
+          "i"
+        ];
+        action = "\"zyy\"zp";
+        desc = "Copy Line Down";
+      }
     ];
   };
 }
