@@ -2,7 +2,7 @@
 
 NixOS configuration for a personal laptop, heavily inspired by vimjoyer
 
-[**Changelog and Todos**](./Changelog.md)
+[**Changelog and Todos**](./docs/Changelog.md)
 
 ## Layout
 
