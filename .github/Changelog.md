@@ -4,7 +4,8 @@
 
 - [x] Add keybinds to duplicate lines
 - [ ] Add "Restructure Config" to guide
-- [ ] Find how to use npm global installs
+- [x] Find how to use npm global installs
+  - Just search on nix `pkgs`
 
 ## `2025-02-10`
 
