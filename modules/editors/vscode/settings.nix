@@ -2,7 +2,7 @@
 {
   imports = [
     ../../themes/fonts.nix
-    ../../utilities/file.nix
+    ../../utils/file.nix
   ];
 
   home.mutFile = {
