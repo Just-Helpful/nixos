@@ -4,6 +4,10 @@
 # I'm fully aware this a cardinal sin in nix, but
 # some software (looking at you vscode...) will attempt
 # to write to the config and error if they can't.
+#
+# Inspired by a Github [comment][workaround] by Warm Cyan.
+#
+# [workaround]: https://github.com/nix-community/home-manager/issues/3090#issuecomment-1835357162
 {
   lib,
   options,
