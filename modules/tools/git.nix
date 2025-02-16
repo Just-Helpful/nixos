@@ -5,6 +5,7 @@ _: {
     userEmail = "alexanderdcolby@gmail.com";
     signing = {
       key = null;
+      format = "openpgp";
       signByDefault = true;
     };
     aliases = {
