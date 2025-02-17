@@ -6,6 +6,7 @@
 {
   imports = [
     ../../utils/file.nix
+    ./files.nix
     ./visuals.nix
   ];
 
