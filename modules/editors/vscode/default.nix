@@ -7,6 +7,7 @@
   imports = [
     ../../utils/file.nix
     ./files.nix
+    ./languages.nix
     ./visuals.nix
   ];
 
