@@ -1,5 +1,12 @@
 # Changelog and Todos
 
+## `2025-02-17`
+
+- [x] Add vscode file excludes
+- [x] Make vscode settings mutable
+- [x] Add vscode editor
+- [ ] Add "Restructure Config" to guide
+
 ## `2025-02-11`
 
 - [x] Add `pnpm`
