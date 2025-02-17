@@ -18,6 +18,8 @@
       enable = true;
     };
 
+    programs.git.ignores = [ "**/.vscode/" ];
+
     home.mutFile = {
       "${config.xdg.configHome}/Code/User/settings.json" = {
         text = builtins.toJSON config.programs.vscode.mutUserSettings;
