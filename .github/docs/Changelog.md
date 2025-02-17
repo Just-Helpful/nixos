@@ -7,6 +7,12 @@
 - [x] Add vscode editor
 - [ ] Add "Restructure Config" to guide
 
+## `2025-02-16`
+
+- [x] Add option for mutable files
+- [x] Fix broken git signing
+- [ ] Add "Restructure Config" to guide
+
 ## `2025-02-11`
 
 - [x] Add `pnpm`
