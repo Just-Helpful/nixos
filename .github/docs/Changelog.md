@@ -2,7 +2,7 @@
 
 ## `2025-02-18`
 
-- [ ] Remove unnecessary module functions
+- [x] Remove unnecessary module functions
 - [x] Set vscode tab size to 2
 - [ ] Add "Restructure Config" to guide
 
