@@ -2,6 +2,7 @@
 
 ## `2025-02-18`
 
+- [ ] Format vscode docs on save
 - [x] Remove unnecessary module functions
 - [x] Set vscode tab size to 2
 - [ ] Add "Restructure Config" to guide
