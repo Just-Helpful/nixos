@@ -4,7 +4,7 @@
 # To see if I see any improvements to my workflows.
 #
 # If you see vscode here, there weren't any improvements... :P
-_: {
+{
   imports = [
     ./nvim
     ./vscode

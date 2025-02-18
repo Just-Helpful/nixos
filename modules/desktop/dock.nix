@@ -1,4 +1,4 @@
-_: {
+{
   imports = [
     ../terminal/alacritty.nix
     ../browsers/firefox.nix

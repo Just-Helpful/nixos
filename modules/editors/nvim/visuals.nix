@@ -1,5 +1,5 @@
 # Visuals
-_: {
+{
   programs.nvf.settings.vim = {
     theme = {
       enable = true;

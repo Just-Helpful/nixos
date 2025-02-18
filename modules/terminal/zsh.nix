@@ -1,4 +1,4 @@
-_: {
+{
   home.sessionVariables = {
     # If you ever move the config from ~/.config/nixos
     # You'll either need to modify this line

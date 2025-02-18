@@ -1,4 +1,4 @@
-_: {
+{
   dconf.enable = true;
   dconf.settings = {
     "org/gnome/desktop/wm/keybindings" = {

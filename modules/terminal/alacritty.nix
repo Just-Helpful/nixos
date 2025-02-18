@@ -1,4 +1,4 @@
-_: {
+{
   imports = [ ../themes/fonts.nix ];
 
   programs.alacritty = {
