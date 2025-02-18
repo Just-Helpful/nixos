@@ -11,6 +11,7 @@ in
 {
   imports = [
     ../../utils/file.nix
+    ./editors.nix
     ./files.nix
     ./languages.nix
     ./visuals.nix
