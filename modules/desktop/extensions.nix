@@ -3,6 +3,7 @@
   home.packages = with pkgs.gnomeExtensions; [
     todotxt
     lilypad
+    clipboard-indicator
   ];
 
   dconf.enable = true;
@@ -11,6 +12,7 @@
     enabled-extensions = with pkgs.gnomeExtensions; [
       todotxt.extensionUuid
       lilypad.extensionUuid
+      clipboard-indicator.extensionUuid
     ];
   };
 
@@ -19,7 +21,10 @@
       show-icons = true;
       reorder = true;
       ignored-order = "@as []";
-      lilypad-order = [ "todoTxt" ];
+      lilypad-order = [
+        "todoTxt"
+        "clipboardIndicator"
+      ];
       rightbox-order = [ "lilypad" ];
     };
   };
