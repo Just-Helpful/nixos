@@ -13,4 +13,14 @@
     todotxt
     lilypad
   ];
+
+  dconf.settings = {
+    "org/gnome/shell/extensions/lilypad" = {
+      show-icons = true;
+      reorder = true;
+      ignored-order = "@as []";
+      lilypad-order = [ "todoTxt" ];
+      rightbox-order = [ "lilypad" ];
+    };
+  };
 }
