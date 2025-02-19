@@ -1,5 +1,13 @@
 # Changelog and Todos
 
+## `2025-02-19`
+
+- [ ] Add Gnome clipboard manager
+- [ ] Add Gnome todo extension
+- [ ] Add Gnome Lilypad
+- [x] Format vscode docs on save
+- [ ] Add "Restructure Config" to guide
+
 ## `2025-02-18`
 
 - [ ] Format vscode docs on save
