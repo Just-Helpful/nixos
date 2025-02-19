@@ -3,7 +3,7 @@
 ## `2025-02-19`
 
 - [ ] Add Gnome clipboard manager
-- [ ] Add Gnome todo extension
+- [x] Add Gnome todo extension
 - [ ] Add Gnome Lilypad
 - [x] Format vscode docs on save
 - [ ] Add "Restructure Config" to guide
