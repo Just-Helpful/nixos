@@ -92,6 +92,60 @@ Then we can create a minimal `flake.nix` that includes the `configuration.nix`:
 }
 ```
 
+### 3. Restructure Config
+
+At this point, we can move from a flat config structure<br/>to one that allows
+for multiple different configurations for different devices.<br/>This leaves the
+root repository a bit cleaner and better splits out configs.
+
+i.e. we go from:
+
+```
+./:
+- configuration.nix
+- hardware.nix
+- flake.nix
+- flake.lock
+```
+
+to the layout:
+
+```
+./:
+- hosts/default/
+  - default.nix # from configuration.nix
+  - hardware.nix
+- flake.nix
+- flake.lock
+```
+
+This can be acheived via the commands:
+
+```
+mkdir -p ./hosts/default
+mv ./hardware.nix ./hosts/default/hardware.nix
+mv ./configuration.nix ./hosts/default/default.nix
+```
+
+You'll also need to update the imports used in `flake.nix` as so:
+
+```nix
+# flake.nix
+{
+    ...
+    outputs = ... {
+        ...
+        nixosConfigurations.default = {
+            ...
+            modules = [ ./hosts/default ];
+        };
+    }
+}
+```
+
+> [!INFO]
+> in `nix`, importing a folder is the same as importing its `default.nix`
+
 ## Sources
 
 There's really quite a lot of sources I've used for this:
