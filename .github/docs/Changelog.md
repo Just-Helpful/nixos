@@ -2,8 +2,9 @@
 
 ## `2025-02-19`
 
+- [ ] Move guide to separate file
 - [x] Set default settings for Lilypad
-- [ ] Add Gnome clipboard manager
+- [x] Add Gnome clipboard manager
 - [x] Add Gnome todo extension
 - [x] Add Gnome Lilypad
 - [x] Format vscode docs on save
