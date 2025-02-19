@@ -1,5 +1,10 @@
 { pkgs, ... }:
 {
+  home.packages = with pkgs.gnomeExtensions; [
+    todotxt
+    lilypad
+  ];
+
   dconf.enable = true;
   dconf.settings."org/gnome/shell" = {
     disable-user-extensions = false;
@@ -8,11 +13,6 @@
       lilypad.extensionUuid
     ];
   };
-
-  home.packages = with pkgs.gnomeExtensions; [
-    todotxt
-    lilypad
-  ];
 
   dconf.settings = {
     "org/gnome/shell/extensions/lilypad" = {
