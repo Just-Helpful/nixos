@@ -2,6 +2,7 @@
 
 ## `2025-02-20`
 
+- [ ] Add options to collapse days in changelog
 - [ ] Add nvim support for Github actions
 - [ ] Add nvim support for yaml
 - [x] Fix github CI
