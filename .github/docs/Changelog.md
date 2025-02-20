@@ -2,7 +2,7 @@
 
 ## `2025-02-20`
 
-- [ ] Fix flickering top bar
+- [x] Fix flickering top bar
 - [x] Remove `lilypad` extension
 - [x] Add `hide-top-bar` extension
 - [x] Correct info callout in guide
