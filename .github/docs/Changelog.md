@@ -2,7 +2,9 @@
 
 ## `2025-02-20`
 
-- [ ] Add simple github CI
+- [ ] Fix github CI
+- [ ] Add README to top level folders
+- [x] Add simple github CI
   - just use `nix flake check`
 - [ ] Attempt to remove titlebars from vscode (Pls!)
 - [x] Move themes to `desktop/`
