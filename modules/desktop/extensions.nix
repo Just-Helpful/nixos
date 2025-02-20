@@ -4,6 +4,7 @@
     todotxt
     lilypad
     clipboard-indicator
+    hide-top-bar
   ];
 
   dconf.enable = true;
@@ -13,6 +14,7 @@
       todotxt.extensionUuid
       lilypad.extensionUuid
       clipboard-indicator.extensionUuid
+      hide-top-bar.extensionUuid
     ];
   };
 
@@ -26,6 +28,9 @@
         "clipboardIndicator"
       ];
       rightbox-order = [ "lilypad" ];
+    };
+    "org/gnome/shell/extensions/hidetopbar" = {
+      mouse-sensitive = true;
     };
   };
 }
