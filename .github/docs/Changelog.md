@@ -2,6 +2,7 @@
 
 ## `2025-02-20`
 
+- [ ] Attempt to remove titlebars from vscode (Pls!)
 - [x] Move themes to `desktop/`
 - [x] Split out gnome extensions
 - [x] Fix flickering top bar
