@@ -4,6 +4,7 @@
     todotxt
     clipboard-indicator
     hide-top-bar
+    disable-unredirect-fullscreen-windows
   ];
 
   dconf.enable = true;
@@ -13,6 +14,7 @@
       todotxt.extensionUuid
       clipboard-indicator.extensionUuid
       hide-top-bar.extensionUuid
+      disable-unredirect-fullscreen-windows.extensionUuid
     ];
   };
 
