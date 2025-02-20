@@ -1,5 +1,10 @@
 # Changelog and Todos
 
+## `2025-02-20`
+
+- [ ] Correct info callout in guide
+- [ ] Move guide to separate file
+
 ## `2025-02-19`
 
 - [ ] Move guide to separate file
@@ -8,7 +13,7 @@
 - [x] Add Gnome todo extension
 - [x] Add Gnome Lilypad
 - [x] Format vscode docs on save
-- [ ] Add "Restructure Config" to guide
+- [x] Add "Restructure Config" to guide
 
 ## `2025-02-18`
 
