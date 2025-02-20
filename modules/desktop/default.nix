@@ -4,6 +4,7 @@
   imports = [
     ./dock.nix
     ./themes.nix
+    ./themes
     ./windows.nix
     ./keybinds.nix
     ./extensions

@@ -5,7 +5,6 @@
     ./editors
     ./languages
     ./terminal
-    ./themes
     ./tools
   ];
 }
