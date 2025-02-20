@@ -2,6 +2,8 @@
 
 ## `2025-02-20`
 
+- [ ] Add nvim support for Github actions
+- [ ] Add nvim support for yaml
 - [ ] Fix github CI
 - [ ] Add README to top level folders
 - [x] Add simple github CI
