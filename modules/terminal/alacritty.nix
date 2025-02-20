@@ -8,7 +8,7 @@
       font.normal.family = "MesloLGL Nerd Font";
       window = {
         decorations = "none";
-        opacity = 0.75;
+        opacity = 0.9;
       };
 
       keyboard.bindings = [
