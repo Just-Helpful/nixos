@@ -143,7 +143,7 @@ You'll also need to update the imports used in `flake.nix` as so:
 }
 ```
 
-> [!INFO]
+> [!TIP]
 > in `nix`, importing a folder is the same as importing its `default.nix`
 
 ## Sources
