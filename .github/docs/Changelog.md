@@ -2,6 +2,7 @@
 
 ## `2025-02-20`
 
+- [ ] Remove `lilypad` extension
 - [x] Add `hide-top-bar` extension
 - [x] Correct info callout in guide
 - [x] Move guide to separate file
