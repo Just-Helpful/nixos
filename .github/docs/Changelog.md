@@ -4,7 +4,7 @@
 
 - [ ] Add nvim support for Github actions
 - [ ] Add nvim support for yaml
-- [ ] Fix github CI
+- [x] Fix github CI
 - [ ] Add README to top level folders
 - [x] Add simple github CI
   - just use `nix flake check`
