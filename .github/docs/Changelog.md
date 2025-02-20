@@ -2,7 +2,7 @@
 
 ## `2025-02-20`
 
-- [ ] Correct info callout in guide
+- [x] Correct info callout in guide
 - [ ] Move guide to separate file
 
 ## `2025-02-19`
