@@ -2,6 +2,8 @@
 
 ## `2025-02-20`
 
+- [ ] Add simple github CI
+  - just use `nix flake check`
 - [ ] Attempt to remove titlebars from vscode (Pls!)
 - [x] Move themes to `desktop/`
 - [x] Split out gnome extensions
