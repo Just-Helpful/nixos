@@ -6,7 +6,7 @@
     ./themes.nix
     ./windows.nix
     ./keybinds.nix
-    ./extensions.nix
+    ./extensions
     ./workspaces.nix
   ];
 }
