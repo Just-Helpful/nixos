@@ -4,5 +4,6 @@
   imports = [
     ./gtk.nix
     ./fonts.nix
+    ./colorscheme.nix
   ];
 }

@@ -2,12 +2,11 @@
 # I primarily use Gnome, as I'm reasonably comfortable with its defaults.
 {
   imports = [
-    ./dock.nix
-    ./themes.nix
     ./themes
+    ./dock.nix
+    ./extensions
     ./windows.nix
     ./keybinds.nix
-    ./extensions
     ./workspaces.nix
   ];
 }
