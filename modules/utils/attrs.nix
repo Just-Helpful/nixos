@@ -1,5 +1,5 @@
 {
-  lib.utilities.attrs = rec {
+  lib.attrset = rec {
     /**
       Performs the opposite of `builtins.listToAttrs`
       by converting an attribute set to a list of `{name = ..., value = ...}`

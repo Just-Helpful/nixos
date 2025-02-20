@@ -25,7 +25,7 @@ in
 
   config = {
     home.file = cfg;
-    home.activation = config.lib.utilities.attrs.flatMapAttrs (
+    home.activation = config.lib.attrset.flatMapAttrs (
       path:
       {
         target ? path,
