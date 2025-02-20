@@ -2,6 +2,7 @@
 
 ## `2025-02-20`
 
+- [x] Split out gnome extensions
 - [x] Fix flickering top bar
 - [x] Remove `lilypad` extension
 - [x] Add `hide-top-bar` extension
