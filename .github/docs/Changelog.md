@@ -2,6 +2,7 @@
 
 ## `2025-02-20`
 
+- [x] Move themes to `desktop/`
 - [x] Split out gnome extensions
 - [x] Fix flickering top bar
 - [x] Remove `lilypad` extension
