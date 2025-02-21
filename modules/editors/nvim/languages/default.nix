@@ -8,6 +8,7 @@
       # maybe enable otter.nvim: lsp for README blocks
     };
 
+    # Languages fully supported by nvf
     languages = {
       enableLSP = true;
       enableFormat = true;
