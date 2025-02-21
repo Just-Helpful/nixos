@@ -1,5 +1,13 @@
 # Changelog and Todos
 
+## `2025-02-21`
+
+- [ ] Add options to collapse days in changelog
+- [ ] Add nvim support for Github actions
+- [ ] Add nvim support for yaml
+- [ ] Add README to top level folders
+- [ ] Attempt to remove titlebars from vscode (Pls!)
+
 ## `2025-02-20`
 
 - [ ] Add options to collapse days in changelog
