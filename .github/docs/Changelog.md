@@ -3,6 +3,7 @@
 <details>
 <summary><h2><code>2025-02-21</code></h2></summary>
 
+- [ ] Add gh search to firefox
 - [ ] Test out nushell
 - [ ] Add nvim support for Github actions
 - [ ] Add nvim support for yaml
