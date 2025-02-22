@@ -15,8 +15,8 @@
 
       # Updates the versions of packages in `flake.lock`
       def nixup-flake [] {
-        nix flake update --flake $"($env.HOME)($env.NIXOS_CONFIG)"
-        try { git -C $"($env.NIXOS_CONFIG)" commit flake.lock -m "chore: updates `flake.lock`" }
+        nix flake update --flake $env.NIXOS_CONFIG
+        try { git -C $env.NIXOS_CONFIG commit flake.lock -m "chore: updates `flake.lock`" }
       }
 
       # Updates the nixos config used to build
