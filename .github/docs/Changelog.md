@@ -3,6 +3,7 @@
 <details>
 <summary><h2><code>2025-02-21</code></h2></summary>
 
+- [ ] Fix Git pushing on nushell
 - [x] Add gh search to firefox
 - [x] Test out nushell
 - [ ] Add nvim support for Github actions
