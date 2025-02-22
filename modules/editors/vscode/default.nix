@@ -1,4 +1,5 @@
 {
+  lib,
   pkgs,
   options,
   config,
@@ -17,7 +18,20 @@ in
     ./visuals.nix
   ];
 
-  options.programs.vscode.mutUserSettings = options.programs.vscode.userSettings;
+  options.programs.vscode.mutUserSettings = lib.options.mkOption {
+    inherit (jsonFormat) type;
+    default = { };
+    example = lib.options.literalExpression ''
+      {
+        "files.autoSave" = "off";
+        "[nix]"."editor.tabSize" = 2;
+      }
+    '';
+    description = ''
+      Configuration written to Visual Studio Code's
+      {file}`settings.json`.
+    '';
+  };
 
   config = {
     programs.vscode = {
