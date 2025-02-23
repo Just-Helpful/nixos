@@ -5,7 +5,9 @@
 
     environmentVariables = config.home.sessionVariables;
 
-    settings = { };
+    settings = {
+      show_banner = false;
+    };
 
     # If you ever move the config from ~/.config/nixos
     # You'll either need to modify `$env.NIXOS_CONFIG`
