@@ -7,7 +7,7 @@
   imports = [
     ./fzf.nix
     ./git.nix
-    ./gpg.nix
+    ./gpg
   ];
 
   home.packages = with pkgs; [
