@@ -13,6 +13,8 @@
   - This will **also** block Github action support
   - I'll either want to help out or just wait (depending on how busy raf is...)
     - I'm going to give it ~1 week and see what happens
+  - The PR actually seems to be blocked on nvim `0.11.0`
+    - apparently, this reworks lsp config in a big way...
 - [ ] Add README to top level folders
 - [x] Attempt to remove titlebars from vscode (Pls!)
   - The Vscode custom bar is:
