@@ -3,6 +3,7 @@
 <details>
 <summary><h2><code>2025-02-21</code></h2></summary>
 
+- [ ] Add shell completion for nushell
 - [ ] Add guide section on GPG keys
 - [ ] Config Firefox extensions
 - [ ] ~~Add nvim support for Github actions~~
