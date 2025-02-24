@@ -36,8 +36,21 @@
       def nixrc [] {
         bash -c $"$EDITOR ($env.NIXOS_CONFIG)"
       }
+
+      # # Handling autocompletion
+      let carapace_completer = {|spans| 
+        carapace $spans.0 nushell ...$spans | from json
+      }
+      $env.config.completions.external = {
+        enable: true
+        completer: $carapace_completer
+      }
     '';
   };
 
+  programs.carapace = {
+    enable = true;
+    enableNushellIntegration = true;
+  };
   programs.nix-your-shell.enable = true;
 }
