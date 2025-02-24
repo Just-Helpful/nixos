@@ -14,7 +14,10 @@
   - I'll either want to help out or just wait (depending on how busy raf is...)
     - I'm going to give it ~1 week and see what happens
 - [ ] Add README to top level folders
-- [ ] Attempt to remove titlebars from vscode (Pls!)
+- [x] Attempt to remove titlebars from vscode (Pls!)
+  - The Vscode custom bar is:
+    1. enabled by default
+    2. seems to do the best here...
 
 </details>
 
