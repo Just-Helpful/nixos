@@ -45,6 +45,13 @@
         enable: true
         completer: $carapace_completer
       }
+
+      # # Handling command not found
+      # This one's copy pasted straight from the nushell docs:
+      # https://www.nushell.sh/book/hooks.html#command-not-found-hook-in-nixos
+      $env.config.hooks.command_not_found = {|command_name|
+        print (command-not-found $command_name | str trim)
+      }
     '';
   };
 
