@@ -15,6 +15,8 @@ version locked correspondingly.
 
 ### `hosts/`
 
+[Documentation](../hosts/README.md)
+
 The `hosts/` directory is used to define the required configuration for a given
 device. This is where you should put your `configuration.nix` and
 `hardware-confguration.nix` when installing NixOS on a fresh device. The
