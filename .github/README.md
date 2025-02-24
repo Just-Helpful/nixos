@@ -25,6 +25,8 @@ to make them slightly more parsable.
 
 ### `modules/`
 
+[Documentation](../modules/README.md)
+
 The `modules/` directory is used to define re-usable units for configuring a
 device. If you plan on using all the modules defined here for a "complete"
 device config, then you can simply add `<...>/modules` to the `imports` defined
