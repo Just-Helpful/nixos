@@ -3,6 +3,7 @@
 <details>
 <summary><h2><code>2025-02-21</code></h2></summary>
 
+- [ ] Fix nix `command-not-found`
 - [ ] Add shell completion for nushell
 - [ ] Add guide section on GPG keys
 - [ ] Config Firefox extensions
