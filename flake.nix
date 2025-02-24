@@ -28,6 +28,13 @@
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Nix's `command-not-found` doesn't play well with flakes
+    # So we need to use a flake specific patch by wamserma
+    programs-sqlite = {
+      url = "github:wamserma/flake-programs-sqlite";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -51,6 +58,7 @@
         specialArgs = { inherit inputs system; };
         modules = [
           { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
+          inputs.programs-sqlite.nixosModules.programs-sqlite
           ./hosts/default
         ];
       };
