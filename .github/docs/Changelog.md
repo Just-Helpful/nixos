@@ -5,7 +5,7 @@
 
 - [ ] Add guide section on GPG keys
 - [ ] Config Firefox extensions
-- [ ] Add nvim support for Github actions
+- [ ] ~~Add nvim support for Github actions~~
 - [ ] Add nvim support for yaml
   - This is likely blocked on an [PR](https://github.com/NotAShelf/nvf/pull/643)
   - Also see this
