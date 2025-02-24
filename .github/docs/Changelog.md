@@ -3,7 +3,25 @@
 <details>
 <summary><h2><code>2025-02-21</code></h2></summary>
 
-- [ ] Fix Git pushing on nushell
+- [ ] Add guide section on GPG keys
+- [ ] Config Firefox extensions
+- [ ] Add nvim support for Github actions
+- [ ] Add nvim support for yaml
+  - This is likely blocked on an [PR](https://github.com/NotAShelf/nvf/pull/643)
+  - Also see this
+    [comment](https://github.com/NotAShelf/nvf/issues/137#issuecomment-2664735644)
+  - This will **also** block Github action support
+  - I'll either want to help out or just wait (depending on how busy raf is...)
+    - I'm going to give it ~1 week and see what happens
+- [ ] Add README to top level folders
+- [ ] Attempt to remove titlebars from vscode (Pls!)
+
+</details>
+
+<details>
+<summary><h2><code>2025-02-21</code></h2></summary>
+
+- [x] Fix Git pushing on nushell
 - [x] Add gh search to firefox
 - [x] Test out nushell
 - [ ] Add nvim support for Github actions
