@@ -15,7 +15,7 @@
     - I'm going to give it ~1 week and see what happens
   - The PR actually seems to be blocked on nvim `0.11.0`
     - apparently, this reworks lsp config in a big way...
-- [ ] Add README to top level folders
+- [x] Add README to top level folders
 - [x] Attempt to remove titlebars from vscode (Pls!)
   - The Vscode custom bar is:
     1. enabled by default
