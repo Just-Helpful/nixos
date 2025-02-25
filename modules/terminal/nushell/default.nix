@@ -47,10 +47,45 @@
       }
 
       # # Handling command not found
-      # This one's copy pasted straight from the nushell docs:
-      # https://www.nushell.sh/book/hooks.html#command-not-found-hook-in-nixos
+      # This one's from the nushell docs
+      # but with some decently heavy parsing and rebuilding
+      # to provide a significantly nicer UI
       $env.config.hooks.command_not_found = {|command_name|
-        print (command-not-found $command_name | str trim)
+        let raw_pkgs = command-not-found $command_name e>| $in
+          | parse --regex "nix-shell -p (?P<name>.*)"
+
+        if ($raw_pkgs | is-empty) {
+          return null
+        }
+        
+        let ranked_pkgs = $raw_pkgs
+          | insert dist {|$pkg|
+            $pkg.name
+            | split row "."
+            | last
+            | str distance $command_name
+          }
+          | insert len {|$pkg|
+            $pkg.name | str length
+          }
+          | uniq
+          | sort-by -c {|$pkg0, $pkg1|
+            if $pkg0.dist < $pkg1.dist {
+              return true
+            }
+            if $pkg0.dist > $pkg1.dist {
+              return false
+            }
+            $pkg0.len < $pkg1.len
+          }
+          | get name
+        
+        let pretty_pkgs = $ranked_pkgs
+          | first 3
+          | each {|pkg| $"`($pkg)`" }
+          | str join ", "
+        
+        $"available nixpkgs: ($pretty_pkgs)"
       }
     '';
   };
