@@ -13,10 +13,4 @@
       disable-unredirect-fullscreen-windows.extensionUuid
     ];
   };
-
-  dconf.settings = {
-    "org/gnome/shell/extensions/hidetopbar" = {
-      mouse-sensitive = true;
-    };
-  };
 }
