@@ -1,6 +1,24 @@
 # Changelog and Todos
 
 <details>
+<summary><h2><code>2025-02-27</code></h2></summary>
+
+- [x] Fix broken Firefox build
+- [ ] Add guide section on GPG keys
+- [ ] Config Firefox extensions
+- [ ] Add nvim support for yaml
+  - This is likely blocked on an [PR](https://github.com/NotAShelf/nvf/pull/643)
+  - Also see this
+    [comment](https://github.com/NotAShelf/nvf/issues/137#issuecomment-2664735644)
+  - This will **also** block Github action support
+  - I'll either want to help out or just wait (depending on how busy raf is...)
+    - I'm going to give it ~1 week and see what happens
+  - The PR actually seems to be blocked on nvim `0.11.0`
+    - apparently, this reworks lsp config in a big way...
+
+</details>
+
+<details>
 <summary><h2><code>2025-02-25</code></h2></summary>
 
 - [ ] Add guide section on GPG keys
