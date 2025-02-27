@@ -3,7 +3,7 @@
 <details>
 <summary><h2><code>2025-02-27</code></h2></summary>
 
-- [ ] Remove GitHub chat from Vscode
+- [x] Remove GitHub chat from Vscode
 - [x] Fix broken Firefox build
 - [ ] Add guide section on GPG keys
 - [ ] Config Firefox extensions
