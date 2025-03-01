@@ -3,7 +3,7 @@
 <details>
 <summary><h2><code>2025-03-01</code></h2></summary>
 
-- [ ] Use nightly firefox build
+- [x] Use nightly firefox build
   - There's been some crap happening with Firefox recently...
 - [ ] Add Librewolf
 - [ ] Add guide section on GPG keys
