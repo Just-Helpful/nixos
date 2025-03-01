@@ -3,7 +3,8 @@
 <details>
 <summary><h2><code>2025-03-01</code></h2></summary>
 
-- [x] Add Noogle shortcut
+- [ ] Add NixOS options shortcut
+- [ ] Add Noogle shortcut
 - [x] Use nightly firefox build
   - There's been some crap happening with Firefox recently...
 - [ ] Add Librewolf
