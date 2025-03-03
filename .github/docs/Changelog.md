@@ -7,7 +7,7 @@
 - [ ] Add Noogle shortcut
 - [x] Use nightly firefox build
   - There's been some crap happening with Firefox recently...
-- [ ] Add Librewolf
+- [x] Add Librewolf
 - [ ] Add guide section on GPG keys
 - [ ] Config Firefox extensions
 - [ ] Add nvim support for yaml
