@@ -1,7 +1,13 @@
-{ pkgs, ... }:
+{
+  lib,
+  config,
+  pkgs,
+  ...
+}:
 {
   programs.gpg = {
     enable = true;
+    mutableKeys = true;
   };
 
   services.gpg-agent = {
