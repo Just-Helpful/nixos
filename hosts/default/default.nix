@@ -57,6 +57,9 @@
     pulse.enable = true;
   };
 
+  # Enable fingerprint login
+  services.fprintd.enable = true;
+
   # Install base programs.
   programs.zsh.enable = true;
 
