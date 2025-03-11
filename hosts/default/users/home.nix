@@ -11,7 +11,7 @@
     # The home.packages option allows you to install Nix packages into your
     # environment.
     packages = with pkgs; [
-      treefmt2
+      treefmt
       gnome-tweaks
     ];
 
