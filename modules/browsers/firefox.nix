@@ -6,6 +6,74 @@
   programs.firefox = {
     enable = true;
 
+    profiles.alexc = {
+      search = {
+        force = true;
+        default = "DuckDuckGo";
+        engines = {
+          "Nix Packages" = {
+            urls = [
+              {
+                template = "https://search.nixos.org/packages";
+                params = [
+                  {
+                    name = "type";
+                    value = "packages";
+                  }
+                  {
+                    name = "channel";
+                    value = "unstable";
+                  }
+                  {
+                    name = "query";
+                    value = "{searchTerms}";
+                  }
+                ];
+              }
+            ];
+            icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+            definedAliases = [ "@np" ];
+          };
+          "Home Options" = {
+            urls = [
+              {
+                template = "https://home-manager-options.extranix.com";
+                params = [
+                  {
+                    name = "release";
+                    value = "master";
+                  }
+                  {
+                    name = "query";
+                    value = "{searchTerms}";
+                  }
+                ];
+              }
+            ];
+            definedAliases = [ "@ho" ];
+          };
+          "Github" = {
+            urls = [
+              {
+                template = "https://github.com/search";
+                params = [
+                  {
+                    name = "type";
+                    value = "repositories";
+                  }
+                  {
+                    name = "q";
+                    value = "{searchTerms}";
+                  }
+                ];
+              }
+            ];
+            definedAliases = [ "@gh" ];
+          };
+        };
+      };
+    };
+
     policies = {
       DisablePocket = true;
       DisplayBookmarksToolbar = "newtab";
@@ -31,36 +99,6 @@
           installation_mode = "normal_installed";
           install_url = "https://addons.mozilla.org/firefox/downloads/latest/tabliss/latest.xpi";
         };
-      };
-
-      SearchEngines = {
-        Default = "DuckDuckGo";
-        Add = [
-          {
-            Name = "Nix Packages";
-            URLTemplate = "https://search.nixos.org/packages?type=packages&channel=unstable&query={searchTerms}";
-            Method = "GET";
-
-            IconURL = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-            Alias = "@np";
-          }
-          {
-            Name = "Home Manager Options";
-            URLTemplate = "https://home-manager-options.extranix.com?release=master&query={searchTerms}";
-            Method = "GET";
-
-            # IconURL = "";
-            Alias = "@hmo";
-          }
-          {
-            Name = "GitHub";
-            URLTemplate = "https://github.com/search?type=repositories&q={searchTerms}";
-            Method = "GET";
-
-            IconURL = "https://github.githubassets.com/favicons/favicon.svg";
-            Alias = "@gh";
-          }
-        ];
       };
     };
   };
