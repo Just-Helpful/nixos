@@ -55,7 +55,7 @@
 
       # the actual nixos configuration
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs system; };
+        specialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
           inputs.programs-sqlite.nixosModules.programs-sqlite

@@ -1,6 +1,5 @@
 {
   inputs,
-  system,
   pkgs,
   ...
 }:
@@ -19,7 +18,7 @@
     useGlobalPkgs = true;
     useUserPackages = true;
     backupFileExtension = "backup";
-    extraSpecialArgs = { inherit inputs system; };
+    extraSpecialArgs = { inherit inputs; };
     users.alexc = import ./home.nix;
   };
 }
