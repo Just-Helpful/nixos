@@ -4,6 +4,8 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    flake-utils.url = "github:numtide/flake-utils";
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -41,17 +43,24 @@
     {
       self,
       nixpkgs,
+      flake-utils,
+      treefmt-nix,
       ...
     }@inputs:
     let
-      system = "x86_64-linux";
-      treefmtBuilder = inputs.treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system};
-      treefmt = treefmtBuilder ./.github/config/treefmt.nix;
+      inherit (flake-utils.lib) eachDefaultSystem;
+
+      # define a treefmt package per computer system
+      treefmt = eachDefaultSystem (
+        system: treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} ./.github/config/treefmt.nix
+      );
     in
     {
       # formatting for this flake, using treefmt and nixfmt-rfc-style
-      formatter.${system} = treefmt.config.build.wrapper;
-      checks.${system}.formatting = treefmt.config.build.check self;
+      formatter = eachDefaultSystem (system: treefmt.${system}.config.build.wrapper);
+      checks = eachDefaultSystem (system: {
+        formatter = treefmt.${system}.config.build.check self;
+      });
 
       # the actual nixos configuration
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
