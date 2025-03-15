@@ -9,7 +9,7 @@
     Install.WantedBy = [ "default.target" ];
     Service.ExecStart = "${pkgs.writeShellScript "rclone-mount-backups" ''
       #!/run/current-system/sw/bin/bash
-      ${pkgs.rclone}/bin/rclone mount --vfs-cache-mode writes Backups:Backups /home/alexc/Backups
+      ${pkgs.rclone}/bin/rclone mount --allow-non-empty --vfs-cache-mode writes Backups:Backups /home/alexc/Backups
     ''}";
   };
 }
