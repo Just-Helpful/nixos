@@ -1,5 +1,6 @@
 {
   imports = [
+    ./applications
     ./browsers
     ./desktop
     ./editors
