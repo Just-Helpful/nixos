@@ -3,6 +3,7 @@
 <details>
 <summary><h2><code>2025-03-15</code></h2></summary>
 
+- [ ] Attempt to get remote backups with `rclone`
 - [x] Add NixOS options shortcut
 - [ ] Add Noogle shortcut
 - [ ] Add guide section on GPG keys
