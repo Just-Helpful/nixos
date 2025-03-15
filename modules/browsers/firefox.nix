@@ -34,6 +34,20 @@
             icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
             definedAliases = [ "@np" ];
           };
+          "Noogle" = {
+            urls = [
+              {
+                template = "https://noogle.dev/q?term=mkEnableOption";
+                params = [
+                  {
+                    name = "term";
+                    value = "{searchTerms}";
+                  }
+                ];
+              }
+            ];
+            definedAliases = [ "@ng" ];
+          };
           "NixOS Options" = {
             urls = [
               {
