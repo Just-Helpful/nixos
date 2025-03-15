@@ -11,7 +11,8 @@
   ];
 
   home.packages = with pkgs; [
-    yq-go
+    rclone
     ripgrep
+    yq-go
   ];
 }
