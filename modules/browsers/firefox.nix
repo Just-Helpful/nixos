@@ -34,7 +34,25 @@
             icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
             definedAliases = [ "@np" ];
           };
-          "Home Options" = {
+          "NixOS Options" = {
+            urls = [
+              {
+                template = "https://search.nixos.org/options?channel=unstable";
+                params = [
+                  {
+                    name = "channel";
+                    value = "unstable";
+                  }
+                  {
+                    name = "query";
+                    value = "{searchTerms}";
+                  }
+                ];
+              }
+            ];
+            definedAliases = [ "@no" ];
+          };
+          "Home Manager Options" = {
             urls = [
               {
                 template = "https://home-manager-options.extranix.com";
