@@ -5,7 +5,7 @@
 
 - [ ] Attempt to get remote backups with `rclone`
 - [x] Add NixOS options shortcut
-- [ ] Add Noogle shortcut
+- [x] Add Noogle shortcut
 - [ ] Add guide section on GPG keys
 - [x] Config Firefox extensions
 - [ ] Add nvim support for yaml
