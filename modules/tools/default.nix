@@ -8,10 +8,10 @@
     ./fzf.nix
     ./git.nix
     ./gpg
+    ./rclone.nix
   ];
 
   home.packages = with pkgs; [
-    rclone
     ripgrep
     yq-go
   ];
