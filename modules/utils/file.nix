@@ -35,15 +35,14 @@ in
         name = builtins.baseNameOf target;
       in
       {
+        # Remove the link to prevent nix build errors
         "rm-link-home/${target}" = lib.hm.dag.entryBefore [ "checkLinkTargets" ] ''
-          # Remove the link to prevent nix build errors
           rm -rf "$HOME/${target}"
         '';
 
+        # Replace link with copy
+        # This is where the nasty, non-nix stuff happens
         "add-cp-home/${target}" = lib.hm.dag.entryAfter [ "linkGeneration" ] ''
-          # Replace link with copy
-          # This is where the nasty, non-nix stuff happens
-
           # mktemp that works on both linux and mac
           tmpdir=$(mktemp -d 2>/dev/null || mktemp -d -t 'mytmpdir')
 
