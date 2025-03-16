@@ -6,6 +6,5 @@
     ./editors
     ./languages
     ./terminal
-    ./tools
   ];
 }
