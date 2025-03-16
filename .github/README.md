@@ -1,6 +1,7 @@
 # Nix-Config
 
-NixOS configuration for a personal laptop, heavily inspired by vimjoyer
+NixOS configuration for a personal laptop, heavily inspired by vimjoyer and
+NotAShelf
 
 ## Layout
 
