@@ -1,6 +1,6 @@
 # Version management
 {
-  imports = [ ../../tools/git.nix ];
+  imports = [ ../../terminal/tools/git.nix ];
 
   programs.nvf.settings.vim = {
     git = {

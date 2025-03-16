@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    gcc
     (rustc.overrideAttrs {
       RUSTUP_HOME = "~/.languages/rust/rustup";
     })

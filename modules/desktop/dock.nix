@@ -1,6 +1,6 @@
 {
   imports = [
-    ../terminal/alacritty.nix
+    ../terminal/shell/alacritty.nix
     ../browsers/firefox.nix
   ];
 
