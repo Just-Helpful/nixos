@@ -11,11 +11,12 @@
     # Include the results of the hardware scan.
     ./hardware.nix
     # Include other configs
-    ./users
+    ./users.nix
     ./network.nix
+    ./services.nix
     ./localisation.nix
     # Patch gnome keyring to allow gpg agent
-    ../../modules/terminal/tools/gpg/patch-keyring.nix
+    ../../../modules/terminal/tools/gpg/patch-keyring.nix
     # Start home manager
     inputs.home-manager.nixosModules.default
   ];
@@ -35,30 +36,6 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-
-  # Enable the X11 windowing system.
-  services.xserver = {
-    enable = true;
-    # Enable the GNOME Desktop Environment.
-    displayManager.gdm.enable = true;
-    desktopManager.gnome.enable = true;
-  };
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
-
-  # Enable sound with pipewire.
-  services.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-  };
-
-  # Enable fingerprint login
-  services.fprintd.enable = true;
 
   # Install base programs.
   programs.zsh.enable = true;

@@ -43,6 +43,7 @@
     {
       self,
       nixpkgs,
+      home-manager,
       flake-utils,
       treefmt-nix,
       ...
@@ -68,7 +69,17 @@
         modules = [
           { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
           inputs.programs-sqlite.nixosModules.programs-sqlite
-          ./hosts/default
+          ./hosts/nixos/default
+        ];
+      };
+
+      # a home manager configuration
+      homeConfigurations.default = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        extraSpecialArgs = { inherit inputs; };
+        modules = [
+          { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
+          ./hosts/home/default
         ];
       };
     };
