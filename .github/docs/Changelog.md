@@ -4,7 +4,7 @@
 <summary><h2><code>2025-03-15</code></h2></summary>
 
 - [ ] Get `rustup` to use `.languages/rust/rustup`
-- [ ] Isolate home manager module from NixOS config
+- [x] Isolate home manager module from NixOS config
 - [ ] Attempt to get remote backups with `rclone`
 - [x] Add NixOS options shortcut
 - [x] Add Noogle shortcut
