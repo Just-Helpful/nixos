@@ -49,17 +49,22 @@
       ...
     }@inputs:
     let
-      inherit (flake-utils.lib) eachDefaultSystem;
+      eachSystem = nixpkgs.lib.genAttrs [
+        "aarch64-darwin"
+        "aarch64-linux"
+        "x86_64-darwin"
+        "x86_64-linux"
+      ];
 
       # define a treefmt package per computer system
-      treefmt = eachDefaultSystem (
+      treefmt = eachSystem (
         system: treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} ./.github/config/treefmt.nix
       );
     in
     {
       # formatting for this flake, using treefmt and nixfmt-rfc-style
-      formatter = eachDefaultSystem (system: treefmt.${system}.config.build.wrapper);
-      checks = eachDefaultSystem (system: {
+      formatter = eachSystem (system: treefmt.${system}.config.build.wrapper);
+      checks = eachSystem (system: {
         formatter = treefmt.${system}.config.build.check self;
       });
 
