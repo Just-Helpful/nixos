@@ -2,11 +2,9 @@
 {
   home.packages = with pkgs; [
     gcc
-    (rustc.overrideAttrs {
-      RUSTUP_HOME = "~/.languages/rust/rustup";
-    })
-    (cargo.overrideAttrs {
-      CARGO_HOME = "~/.languages/rust/cargo";
+    (rustup.overrideAttrs {
+      RUSTUP_HOME = "/home/alexc/.languages/rust/rustup";
+      CARGO_HOME = "/home/alexc/.languages/rust/cargo";
     })
   ];
 }
