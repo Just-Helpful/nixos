@@ -10,8 +10,6 @@ in
 {
   options = {
     programs.rclone = {
-      enable = lib.mkEnableOption "rclone";
-
       backup-service = {
         enable = lib.mkEnableOption "mounting a backup directory via rclone";
         mount_path = lib.mkOption {
@@ -24,8 +22,6 @@ in
   };
 
   config = lib.mkIf cfg.enable {
-    home.packages = with pkgs; [ rclone ];
-
     # Set up a mounted directory for backups
     # You'll need to set up an rclone remote called `Backups` for this.
     systemd.user.services.rclone-mount-backups = lib.mkIf cfg.backup-service.enable {
