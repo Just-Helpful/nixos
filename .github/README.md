@@ -54,3 +54,5 @@ There's really quite a lot of sources I've used for this:
   for available packages
 - [Nix Pills](https://nixos.org/guides/nix-pills/17-nixpkgs-overriding-packages.html)
   for package overrides
+- [Nix Starter](https://github.com/Misterio77/nix-starter-configs/tree/main) for
+  config structuring
