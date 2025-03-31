@@ -79,7 +79,7 @@
       };
 
       # a home manager configuration
-      homeConfigurations.default = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.alex-colby = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = { inherit inputs; };
         modules = [
