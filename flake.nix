@@ -44,7 +44,6 @@
       self,
       nixpkgs,
       home-manager,
-      flake-utils,
       treefmt-nix,
       ...
     }@inputs:
@@ -74,6 +73,7 @@
         modules = [
           { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
           inputs.programs-sqlite.nixosModules.programs-sqlite
+          { nixpkgs.config.allowUnfree = true; }
           ./hosts/nixos/default
         ];
       };
@@ -84,6 +84,7 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
+          { nixpkgs.config.allowUnfree = true; }
           ./hosts/home/default
         ];
       };
