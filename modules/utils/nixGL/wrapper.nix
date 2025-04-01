@@ -1,6 +1,9 @@
-final: prev:
+inputs: final: prev:
 let
   inherit (prev) lib;
+
+  # import nixGL for our wrappers
+  nixGL = import inputs.nixgl { pkgs = final; };
 
   # fetches all binary files for a given package
   getBinFiles =
@@ -37,10 +40,19 @@ let
     };
 
   replacePrefix = builtins.replaceStrings [ "wrapWithNixGL" ] [ "nixGL" ];
+
+  wrappers = lib.genAttrs [
+    "wrapWithNixGLNvidia"
+    "wrapWithNixGLIntel"
+    "wrapWithNixGLDefault"
+  ] (name: wrapWithNixGL final.${replacePrefix name});
 in
+{
+  inherit (nixGL) nixGLNvidia nixGLIntel nixGLDefault;
+  inherit wrapWithNixGL;
+}
+// wrappers
 # generate wrappers for major nixGL programs
-lib.genAttrs [
-  "wrapWithNixGLNvidia"
-  "wrapWithNixGLIntel"
-  "wrapWithNixGLDefault"
-] (name: wrapWithNixGL final.${replacePrefix name})
+# lib.genAttrs [
+#   "wrapWithNixGL"
+# ] (name: wrapWithNixGL final.${replacePrefix name})

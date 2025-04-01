@@ -7,7 +7,7 @@
 
   programs.alacritty = {
     enable = true;
-    package = pkgs.wrapWithNixGLDefault pkgs.alacritty;
+    package = pkgs.wrapWithNixGLIntel pkgs.alacritty;
 
     settings = {
       font.normal.family = "MesloLGL Nerd Font";

@@ -1,7 +1,6 @@
 { inputs, ... }:
 {
   nixpkgs.overlays = [
-    inputs.nixgl.overlay
-    (import ./wrapper.nix)
+    (import ./wrapper.nix inputs)
   ];
 }
