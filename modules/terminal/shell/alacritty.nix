@@ -1,8 +1,13 @@
+{ pkgs, ... }:
 {
-  imports = [ ../../desktop/themes/fonts.nix ];
+  imports = [
+    ../../desktop/themes/fonts.nix
+    ../../utils/nixGL
+  ];
 
   programs.alacritty = {
     enable = true;
+    package = pkgs.wrapWithNixGLDefault pkgs.alacritty;
 
     settings = {
       font.normal.family = "MesloLGL Nerd Font";
@@ -13,7 +18,7 @@
 
       keyboard.bindings = [
         # Clear terminal via a keybind,
-        # works even halfway through a command
+        # works halfway through typing a command
         {
           key = "Delete";
           mods = "Control";
