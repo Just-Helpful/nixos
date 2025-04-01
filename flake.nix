@@ -77,7 +77,6 @@
         specialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
-          inputs.programs-sqlite.nixosModules.programs-sqlite
           { nixpkgs.config.allowUnfree = true; }
           ./hosts/nixos/default
         ];
