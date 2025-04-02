@@ -5,6 +5,7 @@
     ./themes
     ./dock.nix
     ./extensions
+    ./desktop.nix
     ./windows.nix
     ./keybinds.nix
     ./workspaces.nix
