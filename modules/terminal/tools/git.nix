@@ -5,8 +5,8 @@
     userName = "Alex Colby";
     userEmail = "alexanderdcolby@gmail.com";
     signing = {
-      key = null;
-      format = "openpgp";
+      key = "/home/alex-colby/.ssh/ssh_key.pub";
+      format = "ssh";
       signByDefault = true;
     };
     aliases = {
