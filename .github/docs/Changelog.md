@@ -3,6 +3,7 @@
 <details>
 <summary><h2><code>2025-04-02</code></h2></summary>
 
+- [ ] Add shortcuts for updating home-manager
 - [ ] Add `nixGL` wrapper to prism launcher
 - [ ] Get `rustup` to use `.languages/rust/rustup`
 - [ ] Attempt to get remote backups with `rclone`
