@@ -13,7 +13,8 @@
     # You'll either need to modify `$env.NIXOS_CONFIG`
     # or overwrite the variable temporarily via "NIXOS_CONFIG=..."
     extraConfig = ''
-      $env.NIXOS_CONFIG = $"($env.HOME)/.config/nixos"
+      $env.NIXOS_CONFIG = "${config.home.homeDirectory}/.config/nixos"
+      $env.HOME_CONFIG = "${config.home.homeDirectory}/.config/home-manager"
 
       # Updates the versions of packages in `flake.lock`
       def nixup-flake [] {
@@ -35,6 +36,26 @@
       # Edit the nixos config
       def nixrc [] {
         bash -c $"$EDITOR ($env.NIXOS_CONFIG)"
+      }
+
+      # Updates the versions of packages in home manager `flake.lock`
+      def hm-up-flake [] {
+        nix flake update --flake $env.HOME_CONFIG
+        try { git -C $env.NIXOS_CONFIG commit flake.lock -m "chore: updates `flake.lock`" }
+      }
+
+      # Shortcut for home-manager switch
+      alias hm-up-config = home-manager switch
+
+      # Updates the complete home manager config
+      def hm-up [] {
+        hm-up-flake
+        hm-up-config
+      }
+
+      # Edit the home manager config
+      def hm-rc [] {
+        bash -c $"$EDITOR ($env.HOME_CONFIG)"
       }
 
       # # Handling autocompletion
