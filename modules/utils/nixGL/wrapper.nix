@@ -39,16 +39,16 @@ let
       paths = (builtins.map wrapBin binFiles) ++ [ package ];
     };
 
-  replacePrefix = builtins.replaceStrings [ "wrapWithNixGL" ] [ "nixGL" ];
+  replacePrefix = builtins.replaceStrings [ "wrapWithNix" ] [ "nix" ];
 
   wrappers = lib.genAttrs [
     "wrapWithNixGLNvidia"
     "wrapWithNixGLIntel"
-    "wrapWithNixGLDefault"
+    "wrapWithVulkanIntel"
   ] (name: wrapWithNixGL final.${replacePrefix name});
 in
 {
-  inherit (nixGL) nixGLNvidia nixGLIntel nixGLDefault;
+  inherit (nixGL) nixGLNvidia nixGLIntel nixVulkanIntel;
   inherit wrapWithNixGL;
 }
 // wrappers
