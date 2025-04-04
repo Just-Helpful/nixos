@@ -39,22 +39,22 @@
       }
 
       # Updates the versions of packages in home manager `flake.lock`
-      def hmup-flake [] {
+      def homeup-flake [] {
         nix flake update --flake $env.HOME_CONFIG
         try { git -C $env.HOME_CONFIG commit flake.lock -m "chore: updates `flake.lock`" }
       }
 
       # Shortcut for home-manager switch
-      alias hmup-config = home-manager switch
+      alias homeup-config = home-manager switch
 
       # Updates the complete home manager config
-      def hmup [] {
+      def homeup [] {
         hm-up-flake
         hm-up-config
       }
 
       # Edit the home manager config
-      def hmrc [] {
+      def homerc [] {
         bash -c $"$EDITOR ($env.HOME_CONFIG)"
       }
 
