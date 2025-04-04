@@ -52,7 +52,3 @@ in
   inherit wrapWithNixGL;
 }
 // wrappers
-# generate wrappers for major nixGL programs
-# lib.genAttrs [
-#   "wrapWithNixGL"
-# ] (name: wrapWithNixGL final.${replacePrefix name})
