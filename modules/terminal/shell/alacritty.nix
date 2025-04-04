@@ -1,8 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   imports = [
     ../../desktop/themes/fonts.nix
     ../../utils/nixGL
+    ./nushell.nix
   ];
 
   programs.alacritty = {
@@ -15,6 +16,8 @@
         decorations = "none";
         opacity = 0.9;
       };
+
+      terminal.shell = "${config.programs.nushell.package}/bin/nu";
 
       keyboard.bindings = [
         # Clear terminal via a keybind,
