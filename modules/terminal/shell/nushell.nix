@@ -41,7 +41,7 @@
       # Updates the versions of packages in home manager `flake.lock`
       def hmup-flake [] {
         nix flake update --flake $env.HOME_CONFIG
-        try { git -C $env.NIXOS_CONFIG commit flake.lock -m "chore: updates `flake.lock`" }
+        try { git -C $env.HOME_CONFIG commit flake.lock -m "chore: updates `flake.lock`" }
       }
 
       # Shortcut for home-manager switch
