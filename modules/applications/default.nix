@@ -1,3 +1,6 @@
 {
-  imports = [ ./minecraft.nix ];
+  imports = [
+    ./minecraft.nix
+    ./firefox.nix
+  ];
 }
