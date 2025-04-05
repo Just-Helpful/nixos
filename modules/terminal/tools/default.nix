@@ -7,8 +7,8 @@
   imports = [
     ./fzf.nix
     ./git.nix
-    ./gpg
     ./rclone.nix
+    ./ssh.nix
   ];
 
   home.packages = with pkgs; [

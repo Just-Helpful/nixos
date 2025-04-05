@@ -2,6 +2,7 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
+    enableNushellIntegration = true;
   };
 
   programs.starship.settings = {

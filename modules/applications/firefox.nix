@@ -37,7 +37,7 @@
           "Noogle" = {
             urls = [
               {
-                template = "https://noogle.dev/q?term=mkEnableOption";
+                template = "https://noogle.dev/q";
                 params = [
                   {
                     name = "term";

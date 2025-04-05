@@ -11,6 +11,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nixgl = {
+      url = "github:nix-community/nixGL";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nur = {
       url = "github:nix-community/nur";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -44,7 +49,6 @@
       self,
       nixpkgs,
       home-manager,
-      flake-utils,
       treefmt-nix,
       ...
     }@inputs:
@@ -73,17 +77,18 @@
         specialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
-          inputs.programs-sqlite.nixosModules.programs-sqlite
+          { nixpkgs.config.allowUnfree = true; }
           ./hosts/nixos/default
         ];
       };
 
       # a home manager configuration
-      homeConfigurations.default = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.alex-colby = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
+          { nixpkgs.config.allowUnfree = true; }
           ./hosts/home/default
         ];
       };

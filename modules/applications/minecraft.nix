@@ -1,7 +1,11 @@
 { pkgs, ... }:
 {
+  imports = [
+    ../utils/nixGL
+  ];
+
   home.packages = with pkgs; [
-    prismlauncher
+    (pkgs.wrapWithNixGLIntel prismlauncher)
     glfw3-minecraft
   ];
 }

@@ -1,7 +1,7 @@
 {
   imports = [
     ../terminal/shell/alacritty.nix
-    ../browsers/firefox.nix
+    ../applications/firefox.nix
   ];
 
   dconf.enable = true;
