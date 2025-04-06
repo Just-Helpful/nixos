@@ -4,6 +4,9 @@
   ...
 }:
 {
+  imports = [
+    inputs.home-manager.nixosModules.default
+  ];
 
   users.users.alex-colby = {
     description = "Alex Colby";

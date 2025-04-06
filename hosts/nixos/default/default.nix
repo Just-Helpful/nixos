@@ -2,7 +2,6 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 {
-  inputs,
   pkgs,
   ...
 }:
@@ -15,8 +14,6 @@
     ./network.nix
     ./services.nix
     ./localisation.nix
-    # Start home manager
-    inputs.home-manager.nixosModules.default
   ];
 
   # Features
