@@ -78,6 +78,7 @@
         modules = [
           { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
           { nixpkgs.config.allowUnfree = true; }
+          { home-manager.users.alex-colby = import ./hosts/home/default; }
           ./hosts/nixos/default
         ];
       };

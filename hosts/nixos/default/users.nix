@@ -26,6 +26,5 @@
     useUserPackages = true;
     backupFileExtension = "backup";
     extraSpecialArgs = { inherit inputs; };
-    users.alexc = import ../../home/default;
   };
 }
