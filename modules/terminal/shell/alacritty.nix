@@ -1,14 +1,12 @@
-{ pkgs, config, ... }:
+{ config, ... }:
 {
   imports = [
     ../../desktop/themes/fonts.nix
-    ../../utils/nixGL
     ./nushell.nix
   ];
 
   programs.alacritty = {
     enable = true;
-    package = pkgs.wrapWithNixGLIntel pkgs.alacritty;
 
     settings = {
       font.normal.family = "MesloLGL Nerd Font";
