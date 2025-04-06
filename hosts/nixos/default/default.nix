@@ -3,6 +3,7 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 {
   pkgs,
+  modulesPath,
   ...
 }:
 {
@@ -14,6 +15,9 @@
     ./network.nix
     ./services.nix
     ./localisation.nix
+
+    # Enable LiveUSB creation
+    (modulesPath + "/installer/cd-dvd/installation-cd-minimal.nix")
   ];
 
   # Features
