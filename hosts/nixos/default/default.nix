@@ -30,9 +30,6 @@
   nix.settings.auto-optimise-store = true;
   nix.gc.automatic = true;
 
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
