@@ -4,15 +4,19 @@
   ...
 }:
 {
-  users.users.alexc = {
-    isNormalUser = true;
+
+  users.users.alex-colby = {
     description = "Alex Colby";
+    group = "alex-colby";
+    isNormalUser = true;
     extraGroups = [
       "networkmanager"
       "wheel"
     ];
     shell = pkgs.nushell;
   };
+
+  users.groups.alex-colby = { };
 
   home-manager = {
     useGlobalPkgs = true;

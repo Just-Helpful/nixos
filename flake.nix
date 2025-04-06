@@ -89,6 +89,12 @@
         modules = [
           { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
           { nixpkgs.config.allowUnfree = true; }
+          {
+            home = {
+              username = "alex-colby";
+              homeDirectory = "/home/alex-colby";
+            };
+          }
           ./hosts/home/default
         ];
       };
