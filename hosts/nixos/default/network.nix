@@ -9,6 +9,11 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+  networking.networkmanager.unmanaged = [
+    "*"
+    "except:type:wwan"
+    "except:type:gsm"
+  ];
 
   # Enable IOS interfacing
   services.usbmuxd.enable = true;
