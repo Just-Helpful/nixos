@@ -4,9 +4,9 @@
   ...
 }:
 {
-  #imports = [
-  #  inputs.home-manager.nixosModules.default
-  #];
+  imports = [
+    inputs.home-manager.nixosModules.default
+  ];
 
   users.users.default = {
     description = "default";
@@ -18,10 +18,10 @@
     shell = pkgs.nushell;
   };
 
-  #home-manager = {
-  #  useGlobalPkgs = true;
-  #  useUserPackages = true;
-  #  backupFileExtension = "backup";
-  #  extraSpecialArgs = { inherit inputs; };
-  #};
+  home-manager = {
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    backupFileExtension = "backup";
+    extraSpecialArgs = { inherit inputs; };
+  };
 }
