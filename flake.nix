@@ -86,7 +86,9 @@
       nixosConfigurations.test = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
+          { nixpkgs.overlays = with inputs; [ nur.overlays.default ]; }
           { nixpkgs.config.allowUnfree = true; }
+          { home-manager.users.default = import ./hosts/home/default; }
           ./hosts/nixos/default
         ];
       };
