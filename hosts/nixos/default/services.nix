@@ -12,14 +12,14 @@
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;
+  security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
     alsa.enable = true;
     alsa.support32Bit = true;
     pulse.enable = true;
   };
-  security.rtkit.enable = true;
 
   # Enable fingerprint reader
-  services.fprintd.enable = true;
+  #services.fprintd.enable = true;
 }

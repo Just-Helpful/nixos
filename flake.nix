@@ -82,6 +82,14 @@
           ./hosts/nixos/default
         ];
       };
+      
+      nixosConfigurations.test = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs; };
+        modules = [
+          { nixpkgs.config.allowUnfree = true; }
+          ./hosts/nixos/default
+        ];
+      };
 
       # a home manager configuration
       homeConfigurations.alex-colby = home-manager.lib.homeManagerConfiguration {

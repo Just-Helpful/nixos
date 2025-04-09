@@ -4,13 +4,12 @@
   ...
 }:
 {
-  imports = [
-    inputs.home-manager.nixosModules.default
-  ];
+  #imports = [
+  #  inputs.home-manager.nixosModules.default
+  #];
 
-  users.users.alex-colby = {
-    description = "Alex Colby";
-    group = "alex-colby";
+  users.users.default = {
+    description = "default";
     isNormalUser = true;
     extraGroups = [
       "networkmanager"
@@ -19,12 +18,10 @@
     shell = pkgs.nushell;
   };
 
-  users.groups.alex-colby = { };
-
-  home-manager = {
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    backupFileExtension = "backup";
-    extraSpecialArgs = { inherit inputs; };
-  };
+  #home-manager = {
+  #  useGlobalPkgs = true;
+  #  useUserPackages = true;
+  #  backupFileExtension = "backup";
+  #  extraSpecialArgs = { inherit inputs; };
+  #};
 }
