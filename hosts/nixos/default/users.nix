@@ -14,11 +14,14 @@
     isNormalUser = lib.mkForce true;
     shell = pkgs.nushell;
 
+    group = "default";
     extraGroups = [
       "networkmanager"
       "wheel"
     ];
   };
+
+  users.groups.default = { };
 
   home-manager = {
     useGlobalPkgs = true;
