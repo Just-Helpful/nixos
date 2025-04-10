@@ -1,11 +1,11 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   programs.git = {
     enable = true;
     userName = "Alex Colby";
     userEmail = "alexanderdcolby@gmail.com";
     signing = {
-      key = "/home/alex-colby/.ssh/ssh_key.pub";
+      key = "${config.home.homeDirectory}/.ssh/ssh_key.pub";
       format = "ssh";
       signByDefault = true;
     };

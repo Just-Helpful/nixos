@@ -1,6 +1,7 @@
 {
   inputs,
   pkgs,
+  lib,
   ...
 }:
 {
@@ -8,18 +9,19 @@
     inputs.home-manager.nixosModules.default
   ];
 
-  users.users.alex-colby = {
-    description = "Alex Colby";
-    group = "alex-colby";
-    isNormalUser = true;
+  users.users.default = {
+    description = "default";
+    isNormalUser = lib.mkForce true;
+    shell = pkgs.nushell;
+
+    group = "default";
     extraGroups = [
       "networkmanager"
       "wheel"
     ];
-    shell = pkgs.nushell;
   };
 
-  users.groups.alex-colby = { };
+  users.groups.default = { };
 
   home-manager = {
     useGlobalPkgs = true;

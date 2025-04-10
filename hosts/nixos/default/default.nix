@@ -17,7 +17,7 @@
     ./localisation.nix
 
     # Enable LiveUSB creation
-    (modulesPath + "/installer/cd-dvd/installation-cd-minimal.nix")
+    # (modulesPath + "/installer/cd-dvd/installation-cd-minimal.nix")
   ];
 
   # Features
