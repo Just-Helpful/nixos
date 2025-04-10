@@ -1,6 +1,7 @@
 {
   inputs,
   pkgs,
+  lib,
   ...
 }:
 {
@@ -10,7 +11,7 @@
 
   users.users.default = {
     description = "default";
-    isNormalUser = true;
+    isNormalUser = lib.mkForce true;
     extraGroups = [
       "networkmanager"
       "wheel"
