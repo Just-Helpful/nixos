@@ -3,14 +3,13 @@
 <details>
 <summary><h2><code>2025-04-02</code></h2></summary>
 
-- [ ] Add shortcuts for updating home-manager
-- [ ] Add `nixGL` wrapper to prism launcher
+- [ ] Enable fingerprint reader for login
 - [ ] Get `rustup` to use `.languages/rust/rustup`
 - [ ] Attempt to get remote backups with `rclone`
 - [ ] Add nvim support for yaml
   - This is likely blocked on an [PR](https://github.com/NotAShelf/nvf/pull/643)
   - Also see this
-    [comment](https://github.com/NotAShelf/nvf/issues/137#issuecomment-2664735644)
+    [comment](https://github.com/NotAShelf/nvf/issues/136#issuecomment-2664735644)
   - This will **also** block Github action support
   - I'll either want to help out or just wait (depending on how busy raf is...)
     - I'm going to give it ~1 week and see what happens
@@ -24,7 +23,7 @@
 <details>
 <summary><h2><code>2025-04-02</code></h2></summary>
 
-- [ ] Add shortcuts for updating home-manager
+- [x] Add shortcuts for updating home-manager
 - [ ] Add `nixGL` wrapper to prism launcher
 - [ ] Get `rustup` to use `.languages/rust/rustup`
 - [ ] Attempt to get remote backups with `rclone`
