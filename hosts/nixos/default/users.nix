@@ -12,11 +12,12 @@
   users.users.default = {
     description = "default";
     isNormalUser = lib.mkForce true;
+    shell = pkgs.nushell;
+
     extraGroups = [
       "networkmanager"
       "wheel"
     ];
-    shell = pkgs.nushell;
   };
 
   home-manager = {
