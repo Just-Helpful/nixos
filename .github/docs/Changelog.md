@@ -3,6 +3,8 @@
 <details>
 <summary><h2><code>2025-04-02</code></h2></summary>
 
+- [ ] Have a look at whether AMD specific config is needed
+  - See [this](https://discourse.nixos.org/t/enable-plasma-6/40541/27)
 - [ ] Enable fingerprint reader for login
 - [ ] Get `rustup` to use `.languages/rust/rustup`
 - [ ] Attempt to get remote backups with `rclone`
