@@ -14,7 +14,7 @@ in
     ../../utils/file.nix
     ./editors.nix
     ./files.nix
-    ./languages.nix
+    ./languages
     ./visuals.nix
   ];
 
