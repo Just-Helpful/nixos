@@ -13,9 +13,6 @@
     # You'll either need to modify `$env.NIXOS_CONFIG`
     # or overwrite the variable temporarily via "NIXOS_CONFIG=..."
     extraConfig = ''
-      $env.NIXOS_CONFIG = "${config.home.homeDirectory}/.config/nixos"
-      $env.HOME_CONFIG = "${config.home.homeDirectory}/.config/home-manager"
-
       # Updates the versions of packages in `flake.lock`
       def nixup-flake [] {
         nix flake update --flake $env.NIXOS_CONFIG
@@ -115,5 +112,6 @@
     enable = true;
     enableNushellIntegration = true;
   };
+
   programs.nix-your-shell.enable = true;
 }
