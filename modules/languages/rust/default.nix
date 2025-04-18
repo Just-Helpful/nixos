@@ -2,6 +2,7 @@
 {
   imports = [
     ../c.nix
+    ./rustfmt.nix
   ];
 
   home.sessionVariables = {
@@ -12,4 +13,13 @@
   home.packages = with pkgs; [
     rustup
   ];
+
+  programs.rustfmt = {
+    enable = true;
+    settings = {
+      edition = "2024";
+      tab_spaces = 2;
+      use_field_init_shorthand = true;
+    };
+  };
 }
