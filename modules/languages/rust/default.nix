@@ -1,7 +1,7 @@
 { pkgs, config, ... }:
 {
   imports = [
-    ./c.nix
+    ../c.nix
   ];
 
   home.sessionVariables = {

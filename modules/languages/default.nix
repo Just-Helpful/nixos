@@ -11,7 +11,7 @@
 {
   imports = [
     ./c.nix
-    ./rust.nix
     ./node.nix
+    ./rust
   ];
 }

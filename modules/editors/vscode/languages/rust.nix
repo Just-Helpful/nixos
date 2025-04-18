@@ -1,6 +1,6 @@
 {
   imports = [
-    ../../../languages/rust.nix
+    ../../../languages/rust
   ];
 
   programs.vscode.mutUserSettings = {
