@@ -1,7 +1,6 @@
 {
   lib,
   pkgs,
-  options,
   config,
   ...
 }:
@@ -12,6 +11,7 @@ in
 {
   imports = [
     ../../utils/file.nix
+    ./desktop-fix.nix
     ./editors.nix
     ./files.nix
     ./languages
@@ -34,9 +34,7 @@ in
   };
 
   config = {
-    programs.vscode = {
-      enable = true;
-    };
+    programs.vscode.enable = true;
 
     programs.git.ignores = [ "**/.vscode/" ];
 
