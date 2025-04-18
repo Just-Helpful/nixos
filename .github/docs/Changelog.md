@@ -3,6 +3,9 @@
 <details>
 <summary><h2><code>2025-04-18</code></h2></summary>
 
+- [ ] Improve multicursor support in `nvim`
+  - Honestly `multicursors.nvim` seems like a bit of a patch job
+  - whereas `multiple-cursors.nvim` seems a lot better integrated
 - [x] Add vscode rust language support
 - [ ] Enable fingerprint reader for login
   - The error I'm currently getting seems to be _really_ obscure
