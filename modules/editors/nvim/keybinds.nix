@@ -14,7 +14,7 @@
           "n"
           "i"
         ];
-        action = "<cmd>w<CR>";
+        action = "<cmd>w<cr>";
         desc = "Save buffer";
       }
 
@@ -25,7 +25,7 @@
           "n"
           "i"
         ];
-        action = "<cmd>bprevious<CR>";
+        action = "<cmd>bprevious<cr>";
         silent = true;
         desc = "Prev Buffer";
       }
@@ -35,7 +35,7 @@
           "n"
           "i"
         ];
-        action = "<cmd>bnext<CR>";
+        action = "<cmd>bnext<cr>";
         silent = true;
         desc = "Next Buffer";
       }
@@ -44,7 +44,7 @@
         mode = [
           "n"
         ];
-        action = "<cmd>bdelete<CR><cmd>bprevious<CR>";
+        action = "<cmd>bdelete<cr><cmd>bprevious<cr>";
       }
 
       # Moving lines
@@ -54,7 +54,7 @@
           "n"
           "i"
         ];
-        action = "<cmd>m-2<CR>";
+        action = "<cmd>m-2<cr>";
         silent = true;
         desc = "Move Line Up";
       }
