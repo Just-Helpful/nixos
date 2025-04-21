@@ -9,11 +9,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1744996619,
-        "narHash": "sha256-VZVTGkHWm6zkg+lBwGvEQZlrKyZmitnx9r7wOpWbGPw=",
+        "lastModified": 1745238889,
+        "narHash": "sha256-JZMw5SsD8A4mOpLX+rQZEiH3aqrF6Q8139QOyai0S54=",
         "owner": "nix-community",
         "repo": "flake-firefox-nightly",
-        "rev": "55ab012341fd8f177ef1d3853f65477bfe722876",
+        "rev": "87bc0c3b2969f2e24aabb62070be7b4d5326cb71",
         "type": "github"
       },
       "original": {
@@ -152,11 +152,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1744987093,
-        "narHash": "sha256-IVioWVz5qVtHiqosesW7CJW//m/yADr7cVdgF1P4N8s=",
+        "lastModified": 1745256380,
+        "narHash": "sha256-hJH1S5Xy0K2J6eT22AMDIcQ07E8XYC1t7DnXUr2llEM=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "5e6a8203cee7cc33b2e0d9a0adb7268f46447292",
+        "rev": "22b326b42bf42973d5e4fe1044591fb459e6aeac",
         "type": "github"
       },
       "original": {
@@ -171,11 +171,11 @@
         "nixpkgs-lib": "nixpkgs-lib"
       },
       "locked": {
-        "lastModified": 1744546429,
-        "narHash": "sha256-+PnkoiZU4f8oEEkC7Px7+rjC39xCYDEBl+JDhTgOeUM=",
+        "lastModified": 1745151208,
+        "narHash": "sha256-DrWqBD3S5r+wcd9i339uctx8K9rpk4hk5f+vYEwhEhY=",
         "owner": "nix-community",
         "repo": "lib-aggregate",
-        "rev": "bd0229d5b4b6b317983bbf04c93f2fdb2bd192b2",
+        "rev": "2b767b1c75e88222eeb3d1735d15da283d0307f9",
         "type": "github"
       },
       "original": {
@@ -186,11 +186,11 @@
     },
     "mnw": {
       "locked": {
-        "lastModified": 1744592022,
-        "narHash": "sha256-QuWrCRiF3CUM99sgj3gXbIzB1IAVWS5IEfFHadbMA2g=",
+        "lastModified": 1744597985,
+        "narHash": "sha256-lLYB9/tQ0OAKonL0Ku963nqOm0aE1TmLavrzmXAr5Zc=",
         "owner": "Gerg-L",
         "repo": "mnw",
-        "rev": "cf9e19413b6c2d995b55565cd99facf9c751b653",
+        "rev": "cbdcbb5f8eb24e25b932bbc87e29299a72e34b64",
         "type": "github"
       },
       "original": {
@@ -264,11 +264,11 @@
     },
     "nixpkgs-lib": {
       "locked": {
-        "lastModified": 1744511788,
-        "narHash": "sha256-5PVswSsunWhzi6mBwOvuCCUBK+ggcB/idSWCaXvVvr8=",
+        "lastModified": 1745111456,
+        "narHash": "sha256-6k3oWdGcWOIzh3OQBkIf+HBU+xH5vbZtUhwzXEX4NWI=",
         "owner": "nix-community",
         "repo": "nixpkgs.lib",
-        "rev": "022a1e186f42079dba4f00376697158e068abd79",
+        "rev": "eab2ba94b72a8664e0fb92912160151d99db850e",
         "type": "github"
       },
       "original": {
@@ -301,11 +301,11 @@
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
-        "lastModified": 1744994687,
-        "narHash": "sha256-c55e47XpHMaTzhHEjHhJrbPOoUOmbLmrL6FUf/exbFQ=",
+        "lastModified": 1745257591,
+        "narHash": "sha256-WCUfu/o4uNr6c6ZAQBMXIXULXOnVa61BQbIFvxu87u8=",
         "owner": "nix-community",
         "repo": "nur",
-        "rev": "916bc3d240f4d37039768c01a3675ac68e16b434",
+        "rev": "151543031bf252bdf3b2d4a497dd4fdd58cd787f",
         "type": "github"
       },
       "original": {
@@ -326,11 +326,11 @@
         "systems": "systems_4"
       },
       "locked": {
-        "lastModified": 1744973347,
-        "narHash": "sha256-nG+ucj87HPDBRdPq7qeW8sTaG7jnQUzpsOpJyZNdIC4=",
+        "lastModified": 1745219503,
+        "narHash": "sha256-oE7nEQBfLTwXqs0U5/fpsMVsfccD6NL1TlBE1z9S+Nc=",
         "owner": "notashelf",
         "repo": "nvf",
-        "rev": "92812036cce52687a9e089858d79f0e96c43c64c",
+        "rev": "4045c458dc3e3eaabbb94518a857651cff341542",
         "type": "github"
       },
       "original": {
@@ -347,11 +347,11 @@
         "utils": "utils"
       },
       "locked": {
-        "lastModified": 1744987935,
-        "narHash": "sha256-/oq/z7g3ZvR/QwEJswwlmjPiLBJP/eNpxzFCpt0lLto=",
+        "lastModified": 1745249846,
+        "narHash": "sha256-9ukqr9ltSJ6J5Qs+L1jjnnn4l3Nd1K7stBbREwOmwvE=",
         "owner": "wamserma",
         "repo": "flake-programs-sqlite",
-        "rev": "80d236ee32ad1177aff81089da12e2a0a010ebc9",
+        "rev": "912f9566121003c3ecf7b88833b3d8967640a232",
         "type": "github"
       },
       "original": {
