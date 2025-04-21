@@ -76,7 +76,8 @@
           "n"
           "i"
         ];
-        action = "\"zyyk\"zp";
+        action = "<cmd>yank z<cr><up><cmd>put z<cr>";
+        silent = true;
         desc = "Copy Line Up";
       }
       {
@@ -85,7 +86,8 @@
           "n"
           "i"
         ];
-        action = "\"zyy\"zp";
+        action = "<cmd>yank z<cr><cmd>put z<cr>";
+        silent = true;
         desc = "Copy Line Down";
       }
     ];
