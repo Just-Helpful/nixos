@@ -16,7 +16,7 @@
     syntaxHighlighting.enable = true;
 
     # Primarily used to make nixos config updates easier
-    initExtra = ''
+    initContent = ''
       # Updates the versions of packages in `flake.lock`
       nixup-flake() {
         nix flake update --flake $NIXOS_CONFIG
