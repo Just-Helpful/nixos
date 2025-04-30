@@ -1,5 +1,5 @@
 {
   imports = [
-    ./multiple-cursors
+    # ./multiple-cursors
   ];
 }
