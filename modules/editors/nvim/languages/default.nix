@@ -1,6 +1,7 @@
 {
   programs.nvf.settings.vim = {
     lsp = {
+      enable = true;
       formatOnSave = true;
       lightbulb.enable = true;
       trouble.enable = true;
@@ -10,7 +11,6 @@
 
     # Languages fully supported by nvf
     languages = {
-      enableLSP = true;
       enableFormat = true;
       enableTreesitter = true;
       enableExtraDiagnostics = true;
