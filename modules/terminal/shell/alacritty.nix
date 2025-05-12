@@ -12,7 +12,7 @@
       font.normal.family = "MesloLGL Nerd Font";
       window = {
         decorations = "none";
-        opacity = 0.9;
+        opacity = 0.7;
       };
 
       terminal.shell = "${config.programs.nushell.package}/bin/nu";
