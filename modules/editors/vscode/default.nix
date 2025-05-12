@@ -16,6 +16,7 @@ in
     ./files.nix
     ./languages
     ./visuals.nix
+    ./versioning.nix
   ];
 
   options.programs.vscode.mutUserSettings = lib.options.mkOption {
