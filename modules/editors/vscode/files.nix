@@ -10,5 +10,6 @@
       "**/node_modules" = true;
       "**/.svelte-kit" = true;
     };
+    "explorer.confirmDelete" = false;
   };
 }
