@@ -1,8 +1,6 @@
 { inputs, ... }:
 {
-  imports = [ ./alacritty.nix ];
-
-  config.nixpkgs.overlays = [
+  nixpkgs.overlays = [
     (import ./wrapper.nix inputs)
   ];
 }

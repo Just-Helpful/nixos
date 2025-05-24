@@ -2,7 +2,12 @@
 {
   imports = [
     ../../desktop/themes/fonts.nix
+    ../../utils/nixGL
     ./nushell.nix
+  ];
+
+  nixpkgs.overlays = [
+    (_: prev: { alacritty = prev.wrapWithNixGLIntel prev.alacritty; })
   ];
 
   programs.alacritty = {
