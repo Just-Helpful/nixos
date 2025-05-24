@@ -1,9 +1,8 @@
 { config, ... }:
 {
   imports = [
-    ../../desktop/themes/fonts.nix
-    ../../utils/nixGL
-    ./nushell.nix
+    ../desktop/themes/fonts.nix
+    ../utils/nixGL
   ];
 
   nixpkgs.overlays = [

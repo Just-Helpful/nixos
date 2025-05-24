@@ -6,7 +6,6 @@
   imports = [
     ./zsh.nix
     ./nushell.nix
-    ./alacritty.nix
     ./starship.nix
     ./command-not-found.nix
   ];
