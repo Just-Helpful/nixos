@@ -66,6 +66,7 @@
         modules = [
           { nixpkgs.config.allowUnfree = true; }
           { home-manager.users.default = import ./hosts/home/default; }
+          ./modules/nixos
           ./hosts/nixos/default
         ];
       };

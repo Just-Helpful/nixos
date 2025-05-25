@@ -1,1 +1,6 @@
-{ }
+{
+  imports = [
+    ./overlays
+    ./steam.nix
+  ];
+}
