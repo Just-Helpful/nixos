@@ -42,8 +42,12 @@
 
       # have the most recent branches on top when changing branch
       branch.sort = "-committerdate";
+
+      # use url shortcuts for common repositories
+      url = {
+        "ssh://git@github.com/".insteadOf = "github:";
+        "ssh://git@gitlab.com/".insteadOf = "gitlab:";
+      };
     };
   };
-
-  home.packages = with pkgs; [ gh ];
 }
