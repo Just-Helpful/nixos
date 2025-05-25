@@ -7,6 +7,7 @@
 {
   imports = [
     inputs.home-manager.nixosModules.default
+    ../../../modules/nixos/steam.nix
   ];
 
   users.users.default = {
