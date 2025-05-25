@@ -14,6 +14,7 @@ As a general overview:
 - `./terminal`: terminal theming and niceties
 - `./tools`: base command line tooling
 - `./utils`: nix utilities for configuration
+- `./nixos`: nixos system only modules
 
 > [!WARNING]
 > Almost none of these modules use config\
