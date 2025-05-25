@@ -3,6 +3,7 @@
 <details>
 <summary><h2><code>2025-05-25</code></h2></summary>
 
+- [ ] Fix `useGlobalPackages` conflict with home manager
 - [ ] Create template project for python
 - [ ] Create template project for javascript
 - [ ] Create template project for rust
