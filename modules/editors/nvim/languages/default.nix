@@ -20,6 +20,7 @@
         format.type = "nixfmt";
       };
       markdown.enable = true;
+      yaml.enable = true;
     };
 
     autocomplete.nvim-cmp.enable = true;
