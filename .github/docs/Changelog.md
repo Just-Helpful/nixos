@@ -3,6 +3,9 @@
 <details>
 <summary><h2><code>2025-05-25</code></h2></summary>
 
+- [ ] Create template project for python
+- [ ] Create template project for javascript
+- [ ] Create template project for rust
 - [ ] Improve multicursor support in `nvim`
   - Honestly `multicursors.nvim` seems like a bit of a patch job
   - whereas `multiple-cursors.nvim` seems a lot better integrated
@@ -10,7 +13,7 @@
   - The error I'm currently getting seems to be _really_ obscure
   - I may need to pick apart some Ubuntu config, because that seems to work...
 - [ ] Attempt to get remote backups with `rclone`
-- [ ] Add nvim support for yaml
+- [x] Add nvim support for yaml
   - This is likely blocked on an [PR](https://github.com/NotAShelf/nvf/pull/643)
   - Also see this
     [comment](https://github.com/NotAShelf/nvf/issues/136#issuecomment-2664735644)
