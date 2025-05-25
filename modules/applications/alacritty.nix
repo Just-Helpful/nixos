@@ -1,4 +1,4 @@
-{ config, ... }:
+{ lib, config, ... }:
 {
   imports = [
     ../desktop/themes/fonts.nix
@@ -19,7 +19,7 @@
         opacity = 0.7;
       };
 
-      terminal.shell = "${config.programs.nushell.package}/bin/nu";
+      terminal.shell = lib.mkIf config.programs.nushell.enable "${config.programs.nushell.package}/bin/nu";
 
       keyboard.bindings = [
         # Clear terminal via a keybind,
