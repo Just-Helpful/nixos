@@ -5,5 +5,6 @@
     ./obsidian.nix
     ./minecraft.nix
     ./spotify.nix
+    ./wordbook.nix
   ];
 }
