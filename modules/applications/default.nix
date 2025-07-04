@@ -1,6 +1,7 @@
 {
   imports = [
     ./alacritty.nix
+    ./backups.nix
     ./firefox.nix
     ./minecraft.nix
     ./obsidian.nix
