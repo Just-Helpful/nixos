@@ -1,8 +1,17 @@
 # Changelog and Todos
 
 <details>
-<summary><h2><code>2025-06-21</code></h2></summary>
+<summary><h2><code>2025-07-04</code></h2></summary>
 
+- [ ] Try to get "install from github working"
+  - This should consist of having a hook that runs:
+    1. `mkdir ~/.config/nixos`
+    2. `cd ~/.config/nixos`
+    3. `git init`
+    4. `git remote add origin ssh://git@github.com/Just-Helpful/Nix-Config`
+    5. `git pull`
+  - I'm a bit worried about this being impure though...
+- [ ] Fix broken gnome clipboard manager
 - [ ] Create template project for python
 - [ ] Create template project for javascript
 - [ ] Create template project for rust
@@ -12,7 +21,13 @@
 - [ ] Enable fingerprint reader for login
   - The error I'm currently getting seems to be _really_ obscure
   - I may need to pick apart some Ubuntu config, because that seems to work...
-- [ ] Attempt to get remote backups with `rclone`
+
+</details>
+
+<details>
+<summary><h2><code>2025-06-21</code></h2></summary>
+
+- [x] Attempt to get remote backups with `rclone`
 
 </details>
 
