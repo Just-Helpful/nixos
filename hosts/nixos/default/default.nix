@@ -8,7 +8,7 @@
 {
   imports = [
     # Include the results of the hardware scan.
-    ./hardware.nix
+    ./hardware-configuration.nix
     # Include other configs
     ./users.nix
     ./network.nix
