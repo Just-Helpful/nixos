@@ -11,6 +11,8 @@
     ./ssh.nix
   ];
 
+  programs.rclone.enable = true;
+
   home.packages = with pkgs; [
     ripgrep
     yq-go
