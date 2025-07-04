@@ -21,6 +21,9 @@
 - [ ] Enable fingerprint reader for login
   - The error I'm currently getting seems to be _really_ obscure
   - I may need to pick apart some Ubuntu config, because that seems to work...
+  - https://wiki.nixos.org/wiki/Fingerprint_scanner
+  - https://github.com/NixOS/nixpkgs/issues/171136
+  - https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/security/pam.nix
 
 </details>
 
