@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  environment.gnome.excludePackages = with pkgs.gnome; [
+  environment.gnome.excludePackages = with pkgs; [
     cheese # photo booth
     epiphany # web browser
     simple-scan # document scanner
