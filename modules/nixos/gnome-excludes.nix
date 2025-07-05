@@ -9,5 +9,6 @@
     gnome-contacts
     gnome-music
     gnome-photos
+    gnome-tour
   ];
 }
