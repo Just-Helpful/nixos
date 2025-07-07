@@ -1,8 +1,10 @@
 # Changelog and Todos
 
 <details>
-<summary><h2><code>2025-07-04</code></h2></summary>
+<summary><h2><code>2025-07-07</code></h2></summary>
 
+- [ ] Fix buffer deleting in `nvim`
+  - Currently this seems to break pane widths
 - [ ] Try to get "install from github working"
   - This should consist of having a hook that runs:
     1. `mkdir ~/.config/nixos`
