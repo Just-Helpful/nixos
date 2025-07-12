@@ -10,8 +10,8 @@
 # won't see much usage in full-fat projects as I'm just more used to others.
 {
   imports = [
-    ./c.nix
-    ./node.nix
+    ./c
+    ./node
     ./rust
   ];
 }
