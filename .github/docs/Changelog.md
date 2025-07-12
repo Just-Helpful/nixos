@@ -1,10 +1,5 @@
 # Changelog and Todos
 
-<details>
-<summary><h2><code>2025-07-07</code></h2></summary>
-
-- [ ] Fix buffer deleting in `nvim`
-  - Currently this seems to break pane widths
 - [ ] Try to get "install from github working"
   - This should consist of having a hook that runs:
     1. `mkdir ~/.config/nixos`
@@ -27,6 +22,12 @@
   - https://github.com/NixOS/nixpkgs/issues/171136
   - https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/security/pam.nix
   - I think I'll need to modify `/etc/pam.d/login` to match `/etc/pam.d/sudo`
+
+<details>
+<summary><h2><code>2025-07-12</code></h2></summary>
+
+- [x] Fix buffer deleting in `nvim`
+  - Currently this seems to break pane widths
 
 </details>
 
