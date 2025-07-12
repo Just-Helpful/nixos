@@ -44,7 +44,7 @@
         mode = [
           "n"
         ];
-        action = "<cmd>bdelete<cr><cmd>bprevious<cr>";
+        action = "<cmd>lua MiniBufremove.delete()<cr>";
       }
 
       # Moving lines
