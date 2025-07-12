@@ -1,9 +1,18 @@
+{ pkgs, ... }:
 {
+  home.packages = with pkgs; [ nil ];
+
   programs.vscode.mutUserSettings = {
-    "nix.formatterPath" = [
-      "nix"
-      "fmt"
-      "{path}"
-    ];
+    "nix.enableLanguageServer" = true;
+    "nix.serverPath" = "${pkgs.nil}";
+    "nix.serverSettings" = {
+      "nil.formatting" = {
+        "command" = [
+          "nix"
+          "fmt"
+          "{path}"
+        ];
+      };
+    };
   };
 }
