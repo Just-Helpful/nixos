@@ -28,6 +28,9 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.kernelParams = [
+    "amdgpu.dcdebugmask=0x10"
+  ];
 
   # Install base programs.
   programs.zsh.enable = true;
