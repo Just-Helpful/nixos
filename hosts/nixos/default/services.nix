@@ -5,7 +5,6 @@
     desktopManager.gnome.enable = true;
   };
 
-  programs.sway.enable = true;
   programs.hyprland.enable = true;
 
   # Enable CUPS to print documents.
