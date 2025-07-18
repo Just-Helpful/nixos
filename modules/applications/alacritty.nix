@@ -1,7 +1,7 @@
 { lib, config, ... }:
 {
   imports = [
-    ../desktop/themes/fonts.nix
+    ../desktop/gnome/themes/fonts.nix
   ];
 
   programs.alacritty = {
