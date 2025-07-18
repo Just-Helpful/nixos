@@ -1,7 +1,7 @@
 {
   imports = [
-    ../applications/alacritty.nix
-    ../applications/firefox.nix
+    ../../applications/alacritty.nix
+    ../../applications/firefox.nix
   ];
 
   dconf.enable = true;
