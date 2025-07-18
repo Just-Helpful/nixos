@@ -11,7 +11,7 @@
       hide_window_decorations = true;
 
       # colour scheme (matches alacritty default)
-      background_opacity = 0.6;
+      background_opacity = 0.7;
       foreground = "#d8d8d8";
       background = "#181818";
       selection_foreground = "#181818";
