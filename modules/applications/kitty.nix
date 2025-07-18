@@ -7,8 +7,9 @@
     };
 
     settings = {
+      placement_strategy = "top-left";
       hide_window_decorations = true;
-      background_opacity = 0.7;
+      background_opacity = 0.6;
     };
   };
 }
