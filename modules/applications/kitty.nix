@@ -17,16 +17,16 @@
       selection_foreground = "#181818";
       selection_background = "#d8d8d8";
 
-      color0 = "#0f0f0f"; # black     dull
-      color1 = "#712b2b"; # red       dull
-      color2 = "#5f6f3a"; # green     dull
-      color3 = "#a17e4d"; # yellow    dull
-      color4 = "#456877"; # blue      dull
-      color5 = "#704d68"; # magenta   dull
-      color6 = "#4d7770"; # cyan      dull
-      color7 = "#8e8e8e"; # white     dull
-      color8 = "#6b6b6b"; # black     bright
-      color9 = "#c55555"; # red       bright
+      color0 = "#181818"; # .black     normal
+      color1 = "#ac4242"; # .red       normal
+      color2 = "#90a959"; # .green     normal
+      color3 = "#f4bf75"; # .yellow    normal
+      color4 = "#6a9fb5"; # .blue      normal
+      color5 = "#aa759f"; # .magenta   normal
+      color6 = "#75b5aa"; # .cyan      normal
+      color7 = "#d8d8d8"; # .white     normal
+      color8 = "#6b6b6b"; # .black     bright
+      color9 = "#c55555"; # .red       bright
       color10 = "#aac474"; # green     bright
       color11 = "#feca88"; # yellow    bright
       color12 = "#82b8c8"; # blue      bright
