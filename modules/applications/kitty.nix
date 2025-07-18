@@ -13,7 +13,7 @@
     };
 
     keybindings = {
-      "ctrl+delete" = "clear_terminal clear active";
+      "ctrl+delete" = "clear_terminal to_cursor active";
     };
   };
 }
