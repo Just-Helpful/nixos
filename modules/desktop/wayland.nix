@@ -3,7 +3,7 @@
     enable = true;
 
     settings = {
-      debug.disable_logs = true;
+      debug.disable_logs = false;
     };
   };
 }
