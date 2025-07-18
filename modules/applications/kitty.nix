@@ -11,5 +11,9 @@
       hide_window_decorations = true;
       background_opacity = 0.6;
     };
+
+    keybindings = {
+      "ctrl+delete" = "clear_terminal clear active";
+    };
   };
 }
