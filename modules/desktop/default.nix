@@ -4,7 +4,6 @@
   imports = [
     ./themes
     ./dock.nix
-    ./applications
     ./extensions
     ./desktop.nix
     ./windows.nix
