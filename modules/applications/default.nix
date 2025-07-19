@@ -1,6 +1,5 @@
 {
   imports = [
-    ./alacritty.nix
     ./backups.nix
     ./deja-dup.nix
     ./files.nix
