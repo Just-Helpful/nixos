@@ -2,7 +2,6 @@
 {
   home.packages = with pkgs.gnomeExtensions; [
     hide-top-bar
-    disable-unredirect-fullscreen-windows
   ];
 
   dconf.enable = true;
@@ -10,7 +9,6 @@
     disable-user-extensions = false;
     enabled-extensions = with pkgs.gnomeExtensions; [
       hide-top-bar.extensionUuid
-      disable-unredirect-fullscreen-windows.extensionUuid
     ];
   };
 }
