@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
-  profiles.alexc.search = {
+  programs.firefox.profiles.alexc.search = {
     force = true;
     default = "ddg";
     engines = {
