@@ -20,5 +20,10 @@
       installation_mode = "normal_installed";
       install_url = "https://addons.mozilla.org/firefox/downloads/latest/tabliss/latest.xpi";
     };
+    # I Still don't care about cookies
+    "idcac-pub@guus.ninja" = {
+      installation_mode = "normal_installed";
+      install_url = "https://addons.mozilla.org/firefox/downloads/latest/istilldontcareaboutcookies/latest.xpi";
+    };
   };
 }
