@@ -9,6 +9,7 @@
 
     policies = {
       DisablePocket = true;
+      DisableFirefoxAccounts = true;
       DisplayBookmarksToolbar = "newtab";
     };
   };
