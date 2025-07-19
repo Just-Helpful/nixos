@@ -1,5 +1,5 @@
 # # Terminal Setup
-# I use zsh as my primary shell, hosted on alacritty as I like the config structure.
+# I use zsh as my primary shell, hosted on kitty as it's pretty feature rich
 # Starship provides the prompt (which I've probably put significantly too much time into).
 { config, ... }:
 {
