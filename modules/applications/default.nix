@@ -3,6 +3,7 @@
     ./alacritty.nix
     ./backups.nix
     ./deja-dup.nix
+    ./files.nix
     ./firefox
     ./kitty.nix
     ./minecraft.nix
