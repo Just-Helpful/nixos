@@ -1,3 +1,0 @@
-{
-  imports = [ ./deja-dup.nix ];
-}
