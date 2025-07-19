@@ -5,7 +5,7 @@
     userName = "Alex Colby";
     userEmail = "alexdcolby@pm.me";
     signing = {
-      key = "${config.home.homeDirectory}/.ssh/ssh_key.pub";
+      key = "${config.home.homeDirectory}/.ssh/id_ssh.pub";
       format = "ssh";
       signByDefault = true;
     };
