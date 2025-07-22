@@ -1,5 +1,7 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 {
+  home.packages = with pkgs; [ ntfy ];
+
   programs.nushell = {
     enable = true;
 
@@ -22,6 +24,7 @@
       # Updates the nixos config used to build
       def nixup-config [] {
         sudo nixos-rebuild switch --upgrade --flake $"($env.NIXOS_CONFIG)#default"
+        ntfy send -t "NixUp" "Nix update complete"
       }
 
       # Updates the complete nixos config
