@@ -21,7 +21,7 @@
 
       # Updates the nixos config used to build
       def nixup-config [] {
-        nixos-rebuild switch --sudo --upgrade --flake $"($env.NIXOS_CONFIG)#default"
+        sudo nixos-rebuild switch --upgrade --flake $"($env.NIXOS_CONFIG)#default"
       }
 
       # Updates the complete nixos config

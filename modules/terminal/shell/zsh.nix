@@ -25,7 +25,7 @@
 
       # Updates the nixos config used to build
       nixup-config() {
-        nixos-rebuild switch --use-remote-sudo --upgrade --flake $NIXOS_CONFIG#default
+        sudo nixos-rebuild switch --upgrade --flake $NIXOS_CONFIG#default
       }
     '';
 
