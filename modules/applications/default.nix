@@ -6,6 +6,7 @@
     ./firefox
     ./kitty.nix
     ./minecraft.nix
+    ./music.nix
     ./obsidian.nix
     ./office.nix
     ./spotify.nix
