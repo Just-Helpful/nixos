@@ -11,8 +11,6 @@
     };
     autopairs.nvim-autopairs.enable = true;
 
-    # utility.multiple-cursors.enable = true;
-
     options = {
       tabstop = 2;
       shiftwidth = 0;
