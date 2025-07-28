@@ -9,7 +9,6 @@
     5. `git pull`
   - I'm a bit worried about this being impure though...
   - Potentially `nix flake --template` could work better
-- [ ] Fix broken gnome clipboard manager
 - [ ] Create template project for python
 - [ ] Create template project for javascript
 - [ ] Create template project for rust
@@ -28,6 +27,8 @@
 <summary><h2><code>2025-07-28</code></h2></summary>
 
 - [x] Remove AI sidebar in vscode
+- [x] Fix broken gnome clipboard manager
+  - This just seems to have been fixed upstream
 
 </details>
 
