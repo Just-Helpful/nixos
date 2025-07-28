@@ -8,6 +8,7 @@
     4. `git remote add origin ssh://git@github.com/Just-Helpful/Nix-Config`
     5. `git pull`
   - I'm a bit worried about this being impure though...
+  - Potentially `nix flake --template` could work better
 - [ ] Fix broken gnome clipboard manager
 - [ ] Create template project for python
 - [ ] Create template project for javascript
@@ -22,6 +23,13 @@
   - https://github.com/NixOS/nixpkgs/issues/171136
   - https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/security/pam.nix
   - I think I'll need to modify `/etc/pam.d/login` to match `/etc/pam.d/sudo`
+
+<details>
+<summary><h2><code>2025-07-28</code></h2></summary>
+
+- [x] Remove AI sidebar in vscode
+
+</details>
 
 <details>
 <summary><h2><code>2025-07-12</code></h2></summary>
