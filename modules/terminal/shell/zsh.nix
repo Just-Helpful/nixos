@@ -8,8 +8,8 @@
     inherit (config.home) sessionVariables;
 
     # config files
-    dotDir = ".config/zsh/";
-    history.path = "$ZDOTDIR/.history";
+    dotDir = "${config.xdg.configHome}/zsh/";
+    history.path = "${config.programs.zsh.dotDir}/.history";
 
     # automatic tooling
     autocd = true;
