@@ -2,6 +2,6 @@
 {
   home.packages = with pkgs; [
     protonvpn-gui
-    protonpass
+    proton-pass
   ];
 }
