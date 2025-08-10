@@ -7,6 +7,7 @@
     ./kitty.nix
     ./minecraft.nix
     ./music.nix
+    ./proton.nix
     ./obsidian.nix
     ./office.nix
     ./spotify.nix
