@@ -1,4 +1,4 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [ gnomeExtensions.espresso ];
+  home.packages = with pkgs; [ gnomeExtensions.caffeine ];
 }
