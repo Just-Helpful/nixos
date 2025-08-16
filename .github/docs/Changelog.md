@@ -9,9 +9,6 @@
     5. `git pull`
   - I'm a bit worried about this being impure though...
   - Potentially `nix flake --template` could work better
-- [ ] Create template project for python
-- [ ] Create template project for javascript
-- [ ] Create template project for rust
 - [ ] Improve multicursor support in `nvim`
   - Honestly `multicursors.nvim` seems like a bit of a patch job
   - whereas `multiple-cursors.nvim` seems a lot better integrated
