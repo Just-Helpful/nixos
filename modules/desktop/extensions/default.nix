@@ -1,5 +1,6 @@
 {
   imports = [
+    ./activity.nix
     ./clipboard.nix
     ./tiling.nix
     ./todotxt.nix
