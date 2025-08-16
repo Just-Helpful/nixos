@@ -16,8 +16,8 @@
 
     "org/gnome/shell/extensions/tilingshell" = {
       # Shortcuts for quick window expansion
-      span-window-left = "<Super><Shift>Left";
-      span-window-right = "<Super><Shift>Right";
+      span-window-left = "<Shift><Super>Left";
+      span-window-right = "<Shift><Super>Right";
 
       # Window focus border
       enable-window-border = true;
