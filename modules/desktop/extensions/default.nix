@@ -5,5 +5,6 @@
     ./tiling.nix
     ./todotxt.nix
     ./top-bar.nix
+    ./windows.nix
   ];
 }
