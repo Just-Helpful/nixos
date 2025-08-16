@@ -6,10 +6,23 @@
   ];
 
   dconf.enable = true;
-  dconf.settings."org/gnome/shell" = {
-    disable-user-extensions = false;
-    enabled-extensions = with pkgs.gnomeExtensions; [
-      tiling-shell.extensionUuid
-    ];
+  dconf.settings = {
+    "org/gnome/shell" = {
+      disable-user-extensions = false;
+      enabled-extensions = with pkgs.gnomeExtensions; [
+        tiling-shell.extensionUuid
+      ];
+    };
+
+    "org/gnome/shell/extensions/tilingshell" = {
+      # Shortcuts for quick window expansion
+      span-window-left = "<Super><Shift>Left";
+      span-window-right = "<Super><Shift>Right";
+
+      # Window focus border
+      enable-window-border = true;
+      window-border-width = 2;
+      window-border-color = "rgb(53,132,228)";
+    };
   };
 }
