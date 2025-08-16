@@ -1,5 +1,19 @@
 # Changelog and Todos
 
+- [ ] Improve multicursor support in `nvim`
+  - Honestly `multicursors.nvim` seems like a bit of a patch job
+  - whereas `multiple-cursors.nvim` seems a lot better integrated
+- [ ] Enable fingerprint reader for login
+  - The error I'm currently getting seems to be _really_ obscure
+  - I may need to pick apart some Ubuntu config, because that seems to work...
+  - https://wiki.nixos.org/wiki/Fingerprint_scanner
+  - https://github.com/NixOS/nixpkgs/issues/171136
+  - https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/security/pam.nix
+  - I think I'll need to modify `/etc/pam.d/login` to match `/etc/pam.d/sudo`
+
+<details>
+<summary><h2><code>2025-08-16</code></h2></summary>
+
 - [x] Try to get "install from github working"
   - This should consist of having a hook that runs:
     1. `mkdir ~/.config/nixos`
@@ -11,16 +25,8 @@
   - Potentially `nix flake --template` could work better
   - Honestly, `nix flake clone --dest ~/.config/nixos` is just enough on it's
     own
-- [ ] Improve multicursor support in `nvim`
-  - Honestly `multicursors.nvim` seems like a bit of a patch job
-  - whereas `multiple-cursors.nvim` seems a lot better integrated
-- [ ] Enable fingerprint reader for login
-  - The error I'm currently getting seems to be _really_ obscure
-  - I may need to pick apart some Ubuntu config, because that seems to work...
-  - https://wiki.nixos.org/wiki/Fingerprint_scanner
-  - https://github.com/NixOS/nixpkgs/issues/171136
-  - https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/security/pam.nix
-  - I think I'll need to modify `/etc/pam.d/login` to match `/etc/pam.d/sudo`
+
+</details>
 
 <details>
 <summary><h2><code>2025-07-28</code></h2></summary>
