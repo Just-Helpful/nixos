@@ -11,10 +11,10 @@
       enabled-extensions = with pkgs.gnomeExtensions; [
         caffeine.extensionUuid
       ];
+    };
 
-      "extensions/caffeine" = {
-        show-indicator = "never";
-      };
+    "org/gnome/shell/extensions/caffeine" = {
+      show-indicator = "never";
     };
   };
 }
