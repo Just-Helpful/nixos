@@ -1,5 +1,6 @@
 # # Graphical Desktops
 # I primarily use Gnome, as I'm reasonably comfortable with its defaults.
+{ pkgs, ... }:
 {
   imports = [
     ./themes
@@ -10,4 +11,6 @@
     ./keybinds.nix
     ./workspaces.nix
   ];
+
+  home.packages = with pkgs; [ gnome-tweaks ];
 }
