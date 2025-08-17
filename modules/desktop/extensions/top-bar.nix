@@ -18,18 +18,23 @@
       margin = 0.0;
 
       # Transparent background, like nvim
+      bcolor = [
+        "0.239"
+        "0.220"
+        "0.275"
+      ]
       bgalpha = 0.7;
+      iscolor = [
+        "0.141"
+        "0.122"
+        "0.192"
+      ];
       isalpha = 0.7;
 
       # Match borders on apps
       bwidth = 1.0;
       bradius = 12.0;
       bcolor = [
-        "0.239"
-        "0.220"
-        "0.275"
-      ];
-      iscolor = [
         "0.239"
         "0.220"
         "0.275"
