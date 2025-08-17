@@ -14,7 +14,7 @@
     };
 
     "org/gnome/shell/extensions/openbar" = {
-      bartype = "TriLands";
+      bartype = "Trilands";
       margin = 0;
 
       # Transparent background, like nvim
