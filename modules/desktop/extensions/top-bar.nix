@@ -15,15 +15,15 @@
 
     "org/gnome/shell/extensions/openbar" = {
       bartype = "Trilands";
-      margin = 0;
+      margin = 0.0;
 
       # Transparent background, like nvim
       bgalpha = 0.7;
       isalpha = 0.7;
 
       # Match borders on apps
-      bwidth = 1;
-      bradius = 12;
+      bwidth = 1.0;
+      bradius = 12.0;
       bcolor = [
         "0.239"
         "0.220"
