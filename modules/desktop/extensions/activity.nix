@@ -15,6 +15,7 @@
 
     "org/gnome/shell/extensions/caffeine" = {
       show-indicator = "never";
+      show-notifications = false;
       screen-blank = "always";
       trigger-apps-mode = "on-focus";
     };
