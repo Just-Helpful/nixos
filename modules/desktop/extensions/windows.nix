@@ -1,4 +1,4 @@
-# A poor man's Hyprland, for gnome
+# Window appearance
 { pkgs, ... }:
 {
   home.packages = with pkgs.gnomeExtensions; [
