@@ -18,11 +18,11 @@
       margin = 0.0;
 
       # Transparent background, like nvim
-      bcolor = [
+      bgcolor = [
         "0.239"
         "0.220"
         "0.275"
-      ]
+      ];
       bgalpha = 0.7;
       iscolor = [
         "0.141"
