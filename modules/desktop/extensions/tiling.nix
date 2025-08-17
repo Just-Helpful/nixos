@@ -16,6 +16,8 @@
 
     "org/gnome/shell/extensions/tilingshell" = {
       # Shortcuts for quick window expansion
+      span-window-up = [ "<Shift><Super>Up" ];
+      span-window-down = [ "<Shift><Super>Down" ];
       span-window-left = [ "<Shift><Super>Left" ];
       span-window-right = [ "<Shift><Super>Right" ];
 
