@@ -3,6 +3,7 @@
   imports = [
     ../c
     ./rustfmt.nix
+    ./trunk.nix
   ];
 
   home.sessionVariables = {
