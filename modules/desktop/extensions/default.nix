@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
-    ./activity.nix
+    ./caffeine.nix
     ./clipboard.nix
     ./tiling.nix
     ./todotxt.nix
