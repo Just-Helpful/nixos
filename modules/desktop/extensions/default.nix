@@ -1,4 +1,3 @@
-{ pkgs, ... }:
 {
   imports = [
     ./caffeine.nix
@@ -9,6 +8,4 @@
     ./top-bar.nix
     ./windows.nix
   ];
-
-  home.packages = with pkgs; [ gnome-extension-manager ];
 }
