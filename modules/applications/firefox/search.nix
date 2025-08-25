@@ -95,6 +95,25 @@
         ];
         definedAliases = [ "@gh" ];
       };
+      "Google Scholar" = {
+        urls = [
+          {
+            template = "https://scholar.google.co.uk/scholar";
+            params = [
+              {
+                # set default language to english
+                name = "hl";
+                value = "en";
+              }
+              {
+                name = "q";
+                value = "{searchTerms}";
+              }
+            ];
+          }
+        ];
+        definedAliases = [ "@gs" ];
+      };
     };
   };
 }
