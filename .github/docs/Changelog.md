@@ -1,8 +1,20 @@
 # Changelog and Todos
 
+- [ ] Remove unused `rclone` service
+- [ ] Remove unused `ntfy` package in `nushell.nix`
+- [ ] Maybe remove `zsh.nix`, I don't use it as much
+- [ ] Document **why** I need docker
+- [ ] Document kernel parameter fix
+- [ ] Remove X11 keymapping
+  - I don't really plan on using X11 anymore
+- [ ] Remove Hyprland
+  - I tried Hyprland and got a bit scared...
+- [ ] Provide a better description for the default user
+- [ ] See if I can remove the `isNormalUser` at this point
+- [ ] See if I can remove the default group
 - [ ] Improve multicursor support in `nvim`
-  - Honestly `multicursors.nvim` seems like a bit of a patch job
-  - whereas `multiple-cursors.nvim` seems a lot better integrated
+  - Honestly [`multicursors.nvim`](https://github.com/smoka7/multicursors.nvim) seems like a bit of a patch job
+  - whereas [`multiple-cursors.nvim`](https://github.com/brenton-leighton/multiple-cursors.nvim) seems a lot better integrated
 - [ ] Enable fingerprint reader for login
   - The error I'm currently getting seems to be _really_ obscure
   - I may need to pick apart some Ubuntu config, because that seems to work...
