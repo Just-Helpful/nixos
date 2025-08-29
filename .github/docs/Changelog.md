@@ -1,5 +1,17 @@
 # Changelog and Todos
 
+- [ ] Remove unused `rclone` service
+- [ ] Remove unused `ntfy` package in `nushell.nix`
+- [ ] Maybe remove `zsh.nix`, I don't use it as much
+- [ ] Document **why** I need docker
+- [ ] Document kernel parameter fix
+- [ ] Remove X11 keymapping
+  - I don't really plan on using X11 anymore
+- [ ] Remove Hyprland
+  - I tried Hyprland and got a bit scared...
+- [ ] Provide a better description for the default user
+- [ ] See if I can remove the `isNormalUser` at this point
+- [ ] See if I can remove the default group
 - [ ] Improve multicursor support in `nvim`
   - Honestly `multicursors.nvim` seems like a bit of a patch job
   - whereas `multiple-cursors.nvim` seems a lot better integrated
