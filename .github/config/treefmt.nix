@@ -2,7 +2,7 @@
   projectRootFile = "flake.nix";
   settings.global.excludes = [
     "README.md"
-    "**/hardware.nix"
+    "**/hardware-configuration.nix"
   ];
   settings.global.on-unmatched = "info";
 
