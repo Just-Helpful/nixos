@@ -29,6 +29,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelParams = [
+    # used to prevent a few kernel panics I was getting
     "amdgpu.dcdebugmask=0x10"
   ];
 
