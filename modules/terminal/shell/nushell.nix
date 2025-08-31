@@ -1,7 +1,5 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 {
-  home.packages = with pkgs; [ ntfy ];
-
   programs.nushell = {
     enable = true;
 
