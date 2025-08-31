@@ -7,7 +7,6 @@
   imports = [
     ./fzf.nix
     ./git.nix
-    ./rclone.nix
     ./ssh.nix
   ];
 
