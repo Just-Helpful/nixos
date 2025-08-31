@@ -4,7 +4,6 @@
 { config, ... }:
 {
   imports = [
-    ./zsh.nix
     ./nushell.nix
     ./starship.nix
     ./command-not-found.nix
