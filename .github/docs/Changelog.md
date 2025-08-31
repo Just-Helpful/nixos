@@ -1,17 +1,5 @@
 # Changelog and Todos
 
-- [ ] Remove unused `rclone` service
-- [ ] Remove unused `ntfy` package in `nushell.nix`
-- [ ] Maybe remove `zsh.nix`, I don't use it as much
-- [ ] Document **why** I need docker
-- [ ] Document kernel parameter fix
-- [ ] Remove X11 keymapping
-  - I don't really plan on using X11 anymore
-- [ ] Remove Hyprland
-  - I tried Hyprland and got a bit scared...
-- [ ] Provide a better description for the default user
-- [ ] See if I can remove the `isNormalUser` at this point
-- [ ] See if I can remove the default group
 - [ ] Try to fix `wordbook`
   - This is broken due to the incorrect testing method\
     being used on the python `wn` package.
@@ -28,6 +16,27 @@
   - https://github.com/NixOS/nixpkgs/issues/171136
   - https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/security/pam.nix
   - I think I'll need to modify `/etc/pam.d/login` to match `/etc/pam.d/sudo`
+- [ ] Fix deprecated ssh config
+
+<details>
+<summary><h2><code>2025-08-31</code></h2></summary>
+
+- [x] Remove unused `rclone` service
+- [x] Remove unused `ntfy` package in `nushell.nix`
+- [x] Maybe remove `zsh.nix`, I don't use it as much
+- [x] Document **why** I need docker
+  - I've explicitly added the `act` package as explanation
+- [x] Document kernel parameter fix
+- [x] Remove X11 keymapping
+  - I don't really plan on using X11 anymore
+- [x] Remove Hyprland
+  - I tried Hyprland and got a bit scared...
+- [x] See if I can remove the `isNormalUser` at this point
+  - I can't, but I can remove the `mkForce`
+- [x] See if I can remove the default group
+  - No, no I cannot, it actually locks me out of the device...
+
+</details>
 
 <details>
 <summary><h2><code>2025-08-16</code></h2></summary>
