@@ -11,6 +11,7 @@
 {
   imports = [
     ./c
+    ./elixir
     ./julia
     ./node
     ./rust
