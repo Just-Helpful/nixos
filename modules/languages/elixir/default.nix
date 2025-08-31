@@ -1,4 +1,7 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [ beam28Packages.elixir ];
+  home.packages = with pkgs.beam28Packages; [
+    elixir
+    elixir-ls
+  ];
 }
