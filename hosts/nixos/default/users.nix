@@ -11,7 +11,7 @@
 
   users.users.default = {
     description = "default";
-    isNormalUser = lib.mkForce true;
+    isNormalUser = true;
     shell = pkgs.nushell;
 
     group = "default";
