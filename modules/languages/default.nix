@@ -11,6 +11,7 @@
 {
   imports = [
     ./c
+    ./julia
     ./node
     ./rust
   ];
