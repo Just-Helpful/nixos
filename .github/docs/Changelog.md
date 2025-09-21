@@ -16,7 +16,13 @@
   - https://github.com/NixOS/nixpkgs/issues/171136
   - https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/security/pam.nix
   - I think I'll need to modify `/etc/pam.d/login` to match `/etc/pam.d/sudo`
-- [ ] Fix deprecated ssh config
+
+<details>
+<summary><h2><code>2025-09-21</code></h2></summary>
+
+- [x] Fix deprecated ssh config
+
+</details>
 
 <details>
 <summary><h2><code>2025-08-31</code></h2></summary>
