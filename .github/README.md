@@ -3,7 +3,11 @@
 NixOS configuration for a personal laptop, heavily inspired by vimjoyer and
 NotAShelf
 
+---
+
 ![An example desktop layout on this config](./docs/Desktop.png)
+
+---
 
 ## Layout
 
