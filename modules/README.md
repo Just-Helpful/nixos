@@ -7,14 +7,13 @@ can be found at the top of their respective `default.nix`.
 
 As a general overview:
 
-- `./browsers`: web browsers (primarily firefox)
+- `./applications`: various installed applications
 - `./desktop`: desktop appearance and utilities
 - `./editors`: code / text editors
 - `./languages`: language support for my used languages
-- `./terminal`: terminal theming and niceties
-- `./tools`: base command line tooling
-- `./utils`: nix utilities for configuration
 - `./nixos`: nixos system only modules
+- `./terminal`: terminal theming and niceties
+- `./utils`: nix utilities for configuration
 
 > [!WARNING]
 > Almost none of these modules use config\
