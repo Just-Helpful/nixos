@@ -14,6 +14,7 @@
     ./elixir
     ./julia
     ./node
+    ./python
     ./rust
   ];
 }
