@@ -12,7 +12,7 @@
   imports = [
     ./c
     ./elixir
-    ./julia
+    # ./julia
     ./node
     ./python.nix
     ./rust
