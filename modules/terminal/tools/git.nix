@@ -2,16 +2,10 @@
 {
   programs.git = {
     enable = true;
-    userName = "Alex Colby";
-    userEmail = "alexdcolby@pm.me";
     signing = {
       key = "${config.home.homeDirectory}/.ssh/id_ssh.pub";
       format = "ssh";
       signByDefault = true;
-    };
-    aliases = {
-      undo = "reset HEAD~";
-      graph = "log --graph --oneline --decorate --all";
     };
 
     ignores = [
@@ -21,7 +15,15 @@
       ".scratch/"
     ];
 
-    extraConfig = {
+    settings = {
+      userName = "Alex Colby";
+      userEmail = "alexdcolby@pm.me";
+
+      aliases = {
+        undo = "reset HEAD~";
+        graph = "log --graph --oneline --decorate --all";
+      };
+
       # merge by default
       pull.rebase = false;
 
