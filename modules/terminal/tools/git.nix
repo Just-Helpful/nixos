@@ -16,8 +16,10 @@
     ];
 
     settings = {
-      userName = "Alex Colby";
-      userEmail = "alexdcolby@pm.me";
+      user = {
+        name = "Alex Colby";
+        email = "alexdcolby@pm.me";
+      };
 
       aliases = {
         undo = "reset HEAD~";
