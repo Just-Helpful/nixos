@@ -86,5 +86,16 @@
           ./hosts/home/default
         ];
       };
+
+      # a home manager configuration
+      homeConfigurations.fedora = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        extraSpecialArgs = { inherit inputs; };
+        modules = [
+          { nixpkgs.config.allowUnfree = true; }
+          ./hosts/home/fedora
+        ];
+      };
+
     };
 }
