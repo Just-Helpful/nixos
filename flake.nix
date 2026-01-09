@@ -72,15 +72,15 @@
       };
 
       # a home manager configuration
-      homeConfigurations.alex-colby = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations.default = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.config.allowUnfree = true; }
           {
             home = {
-              username = "alex-colby";
-              homeDirectory = "/home/alex-colby";
+              username = "default";
+              homeDirectory = "/home/default";
             };
           }
           ./hosts/home/default
