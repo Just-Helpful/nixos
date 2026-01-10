@@ -1,10 +1,17 @@
+{ lib, ... }:
 {
   imports = [
     ../../../modules/desktop
     ../../../modules/editors
     ../../../modules/languages
     ../../../modules/terminal
+
+    # enable the config for some apps
+    ../../../modules/applications/kitty.nix
   ];
+
+  # but then disable the packages as we're running into GPU issues
+  programs.kitty.package = null;
 
   home = {
     username = "default";
