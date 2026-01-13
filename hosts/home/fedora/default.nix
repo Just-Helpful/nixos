@@ -20,9 +20,14 @@
   };
 
   programs.home-manager.enable = true;
-  programs.bash.enable = true;
   targets.genericLinux.enable = true;
-  targets.genericLinux.gpu.enable = true;
+
+  programs.bash = {
+    enable = true;
+    bashrcExtra = ''
+      nu
+    '';
+  };
 
   home.stateVersion = "24.11";
 }
