@@ -44,12 +44,12 @@
       });
 
       # define the default package that provides neovim
-      packages = eachSystem (
-        system:
-        (nvf.lib.neovimConfiguration {
-          pkgs = nixpkgs.legacyPackages.${system};
-          modules = [ ./modules ];
-        }).neovim
-      );
+      packages = eachSystem (system: {
+        default =
+          (nvf.lib.neovimConfiguration {
+            pkgs = nixpkgs.legacyPackages.${system};
+            modules = [ ./modules ];
+          }).neovim;
+      });
     };
 }
