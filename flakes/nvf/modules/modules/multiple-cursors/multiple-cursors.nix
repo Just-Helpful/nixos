@@ -75,7 +75,7 @@ let
   };
 in
 {
-  options.programs.nvf.settings.vim.utility.multiple-cursors = {
+  options.vim.utility.multiple-cursors = {
     enable = mkEnableOption "vscode like multiple cursors [multiple-cursors.nvim]";
 
     setupOpts = mkPluginSetupOption "multicursors" {

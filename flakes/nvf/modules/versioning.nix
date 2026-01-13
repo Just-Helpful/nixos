@@ -1,8 +1,6 @@
 # Version management
 {
-  imports = [ ../../terminal/tools/git.nix ];
-
-  programs.nvf.settings.vim = {
+  vim = {
     git = {
       enable = true;
       gitsigns.enable = true;

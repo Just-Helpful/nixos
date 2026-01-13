@@ -5,11 +5,11 @@
 }:
 let
   inherit (lib.modules) mkIf;
-  cfg = config.programs.nvf.settings.vim.utility.multiple-cursors;
+  cfg = config.vim.utility.multiple-cursors;
 in
 {
   config = mkIf cfg.enable {
-    programs.nvf.settings.vim = {
+    vim = {
       startPlugins = [ "hydra-nvim" ];
       lazy.plugins."multiple-cursors-nvim" = {
         package = "multiple-cursors-nvim";

@@ -1,5 +1,5 @@
 {
-  programs.nvf.settings.vim = {
+  vim = {
     lsp = {
       enable = true;
       formatOnSave = true;

@@ -1,6 +1,6 @@
 # Hotkeys
 {
-  programs.nvf.settings.vim = {
+  vim = {
     binds = {
       whichKey.enable = true;
       cheatsheet.enable = true;

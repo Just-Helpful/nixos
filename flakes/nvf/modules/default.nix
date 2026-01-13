@@ -1,6 +1,5 @@
 # Neovim flake options
 # mostly sourced from the default [config](https://github.com/NotAShelf/nvf/blob/main/configuration.nix)
-{ ... }:
 {
   imports = [
     ./files.nix
@@ -12,6 +11,4 @@
     ./modules
     ./languages
   ];
-
-  programs.nvf.enable = true;
 }

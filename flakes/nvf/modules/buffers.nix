@@ -1,6 +1,6 @@
 # Buffer editing
 {
-  programs.nvf.settings.vim = {
+  vim = {
     ui = {
       illuminate.enable = true;
       fastaction.enable = true;

@@ -1,6 +1,6 @@
 # File navigation
 {
-  programs.nvf.settings.vim = {
+  vim = {
     projects.project-nvim.enable = true;
 
     telescope.enable = true;
@@ -8,6 +8,6 @@
     mini.bufremove.enable = true;
     visuals.nvim-web-devicons.enable = true;
 
-    # tabline.nvimBufferline.enable = true;
+    tabline.nvimBufferline.enable = true;
   };
 }
