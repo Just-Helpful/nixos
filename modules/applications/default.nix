@@ -12,5 +12,6 @@
     ./obsidian.nix
     ./office.nix
     ./spotify.nix
+    ./zoom.nix
   ];
 }
