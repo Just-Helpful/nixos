@@ -7,12 +7,10 @@
 
     # enable the config for some apps
     ../../../modules/applications/kitty.nix
-    ../../../modules/applications/firefox
   ];
 
   # but then disable the packages as we're running into GPU issues
   programs.kitty.package = null;
-  programs.firefox.package = null;
 
   home = {
     username = "default";
