@@ -15,5 +15,6 @@
   home.packages = with pkgs; [
     ripgrep
     yq-go
+    openvpn3
   ];
 }
