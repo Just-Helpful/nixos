@@ -23,6 +23,8 @@
   programs.bash = {
     enable = true;
     bashrcExtra = ''
+      # support python user installs
+      export PATH="$HOME/.local/bin:$PATH"
       nu
     '';
   };
