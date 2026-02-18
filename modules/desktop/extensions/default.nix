@@ -1,5 +1,6 @@
 {
   imports = [
+    ./blur.nix
     ./caffeine.nix
     ./clipboard.nix
     ./pip-on-top.nix
