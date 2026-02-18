@@ -20,11 +20,6 @@
       span-window-down = [ "<Shift><Super>Down" ];
       span-window-left = [ "<Shift><Super>Left" ];
       span-window-right = [ "<Shift><Super>Right" ];
-
-      # Window focus border
-      enable-window-border = true;
-      window-border-width = 2;
-      window-border-color = "rgb(53,132,228)";
     };
   };
 }
