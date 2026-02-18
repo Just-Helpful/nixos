@@ -1,3 +1,4 @@
+{ lib, ... }:
 {
   imports = [
     ../../../modules/desktop
@@ -11,6 +12,7 @@
 
   # but then disable the packages as we're running into GPU issues
   programs.kitty.package = null;
+  programs.vscode.enable = lib.mkForce false;
 
   home = {
     username = "default";
