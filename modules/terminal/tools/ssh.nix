@@ -1,7 +1,7 @@
 {
   programs.ssh.enable = true;
   programs.ssh.enableDefaultConfig = false;
-  programs.ssh.matchBlocks."*" = {
+  programs.ssh.settings."*" = {
     forwardAgent = false;
     addKeysToAgent = "no";
     compression = false;
