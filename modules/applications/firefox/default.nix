@@ -1,3 +1,4 @@
+{ config, ... }:
 {
   imports = [
     ./search.nix
@@ -6,6 +7,7 @@
 
   programs.firefox = {
     enable = true;
+    programs.firefox.configPath = "${config.xdg.configHome}/mozilla/firefox";
 
     policies = {
       DisablePocket = true;
