@@ -1,4 +1,4 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [ lollypop ];
+  home.packages = with pkgs; [ gapless ];
 }
