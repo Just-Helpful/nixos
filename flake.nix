@@ -65,9 +65,9 @@
         specialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.config.allowUnfree = true; }
-          { home-manager.users.default = import ./hosts/home/default; }
+          { home-manager.users.default = import ./hosts/home; }
           ./modules/nixos
-          ./hosts/nixos/default
+          ./hosts/nixos
         ];
       };
 
@@ -83,7 +83,7 @@
               homeDirectory = "/home/default";
             };
           }
-          ./hosts/home/default
+          ./hosts/home
         ];
       };
 
@@ -93,7 +93,7 @@
         extraSpecialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.config.allowUnfree = true; }
-          ./hosts/home/fedora
+          ./hosts/fedora
         ];
       };
 
