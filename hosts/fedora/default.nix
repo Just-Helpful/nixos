@@ -15,6 +15,9 @@ in
     ../../../modules/applications/minecraft.nix
     ../../../modules/applications/music.nix
     ../../../modules/applications/notes.nix
+
+    # add systemd service modules
+    ../../../modules/services/searxng.nix
   ];
 
   # but then disable the packages as we're running into GPU issues
@@ -39,6 +42,7 @@ in
 
   home.stateVersion = "24.11";
 
+  # Enable auto-update with default frequency (weekly)
   services.home-manager.autoUpgrade = {
     enable = true;
     useFlake = true;
@@ -51,4 +55,7 @@ in
       "${git} push"
     ];
   };
+
+  # And SearXNG for search
+  services.searx.enable = true;
 }
