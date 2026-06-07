@@ -1,3 +1,7 @@
+{ config, pkgs, ... }:
+let
+  git = "${pkgs.gitMinimal}/bin/git";
+in
 {
   imports = [
     ../../../modules/desktop
@@ -34,4 +38,17 @@
   };
 
   home.stateVersion = "24.11";
+
+  services.home-manager.autoUpgrade = {
+    enable = true;
+    useFlake = true;
+    flakeDir = "${config.xdg.configHome}/nixos";
+
+    preSwitchCommands = [
+      "${git} pull"
+      "nix flake update"
+      "${git} commit -m 'chore: updates `flake.lock`'"
+      "${git} push"
+    ];
+  };
 }
