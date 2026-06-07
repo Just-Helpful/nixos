@@ -9,7 +9,7 @@
     ./minecraft.nix
     ./music.nix
     ./proton.nix
-    ./obsidian.nix
+    ./notes.nix
     ./office.nix
     ./spotify.nix
     ./zoom.nix
