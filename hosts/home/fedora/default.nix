@@ -7,6 +7,10 @@
 
     # enable the config for some apps
     ../../../modules/applications/kitty.nix
+    ../../../modules/applications/dictionary.nix
+    ../../../modules/applications/minecraft.nix
+    ../../../modules/applications/music.nix
+    ../../../modules/applications/notes.nix
   ];
 
   # but then disable the packages as we're running into GPU issues
