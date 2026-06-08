@@ -45,7 +45,7 @@ in
   # Enable auto-update
   services.home-manager.autoUpgrade = {
     enable = true;
-frequency = "weekly";
+    frequency = "weekly";
 
     useFlake = true;
     flakeDir = "${config.xdg.configHome}/nixos";
@@ -59,5 +59,5 @@ frequency = "weekly";
   };
 
   # And SearXNG for search
-  services.searx.enable = true;
+  services.searxng.enable = true;
 }
