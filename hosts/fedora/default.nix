@@ -51,7 +51,7 @@ in
     preSwitchCommands = [
       "${git} pull"
       "nix flake update"
-      "${git} commit -m 'chore: updates `flake.lock`'"
+      "${git} commit -m \"chore: updates \\`flake.lock\\`\""
       "${git} push"
     ];
   };
