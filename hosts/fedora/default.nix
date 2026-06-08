@@ -42,9 +42,11 @@ in
 
   home.stateVersion = "24.11";
 
-  # Enable auto-update with default frequency (weekly)
+  # Enable auto-update
   services.home-manager.autoUpgrade = {
     enable = true;
+frequency = "weekly";
+
     useFlake = true;
     flakeDir = "${config.xdg.configHome}/nixos";
 
