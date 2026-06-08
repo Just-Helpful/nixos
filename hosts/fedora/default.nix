@@ -4,20 +4,20 @@ let
 in
 {
   imports = [
-    ../../../modules/desktop
-    ../../../modules/editors
-    ../../../modules/languages
-    ../../../modules/terminal
+    ../../modules/desktop
+    ../../modules/editors
+    ../../modules/languages
+    ../../modules/terminal
 
     # enable the config for some apps
-    ../../../modules/applications/kitty.nix
-    ../../../modules/applications/dictionary.nix
-    ../../../modules/applications/minecraft.nix
-    ../../../modules/applications/music.nix
-    ../../../modules/applications/notes.nix
+    ../../modules/applications/kitty.nix
+    ../../modules/applications/dictionary.nix
+    ../../modules/applications/minecraft.nix
+    ../../modules/applications/music.nix
+    ../../modules/applications/notes.nix
 
     # add systemd service modules
-    ../../../modules/services/searxng.nix
+    ../../modules/services/searxng.nix
   ];
 
   # but then disable the packages as we're running into GPU issues
