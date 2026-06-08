@@ -30,6 +30,8 @@
       url = "github:wamserma/flake-programs-sqlite";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    flake-utils.url = "github:numtide/flake-utils";
   };
 
   outputs =
@@ -38,28 +40,26 @@
       nixpkgs,
       home-manager,
       treefmt-nix,
+      flake-utils,
       ...
     }@inputs:
-    let
-      eachSystem = nixpkgs.lib.genAttrs [
-        "aarch64-darwin"
-        "aarch64-linux"
-        "x86_64-darwin"
-        "x86_64-linux"
-      ];
 
-      # define a treefmt package per computer system
-      treefmt = eachSystem (
-        system: treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} ./.github/config/treefmt.nix
-      );
-    in
-    {
-      # formatting for this flake, using treefmt and nixfmt-rfc-style
-      formatter = eachSystem (system: treefmt.${system}.config.build.wrapper);
-      checks = eachSystem (system: {
-        formatter = treefmt.${system}.config.build.check self;
-      });
+    # flake outputs that rely on a {${output}.${system} = ...} layout
+    flake-utils.lib.eachDefaultSystem (
+      system:
+      let
+        # define a treefmt package per computer system
+        treefmt = treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} ./.github/config/treefmt.nix;
+      in
+      {
+        # formatting for this flake, using treefmt and nixfmt-rfc-style
+        formatter = treefmt.${system}.config.build.wrapper;
+        checks.formatter = treefmt.${system}.config.build.check self;
+      }
+    )
 
+    # flake outputs that rely on a (${output} = ...) layout, without `${system}`
+    // flake-utils.lib.eachDefaultSystemPassThrough (system: {
       # the actual nixos configuration
       nixosConfigurations.default = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
@@ -73,7 +73,7 @@
 
       # a home manager configuration
       homeConfigurations.default = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.config.allowUnfree = true; }
@@ -89,13 +89,12 @@
 
       # a home manager configuration
       homeConfigurations.fedora = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = { inherit inputs; };
         modules = [
           { nixpkgs.config.allowUnfree = true; }
           ./hosts/fedora
         ];
       };
-
-    };
+    });
 }
