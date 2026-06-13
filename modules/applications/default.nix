@@ -6,6 +6,7 @@
     ./files.nix
     ./firefox
     ./kitty.nix
+    ./localsend.nix
     ./minecraft.nix
     ./music.nix
     ./proton.nix
