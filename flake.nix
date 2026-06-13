@@ -53,8 +53,8 @@
       in
       {
         # formatting for this flake, using treefmt and nixfmt-rfc-style
-        formatter = treefmt.${system}.config.build.wrapper;
-        checks.formatter = treefmt.${system}.config.build.check self;
+        formatter = treefmt.config.build.wrapper;
+        checks.formatter = treefmt.config.build.check self;
       }
     )
 
