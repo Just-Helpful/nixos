@@ -39,6 +39,7 @@ in
     bashrcExtra = ''
       # support python user installs
       export PATH="$HOME/.local/bin:$PATH"
+      export LD_LIBRARY_PATH="/usr/lib64:$LD_LIBRARY_PATH"
       nu
     '';
   };
