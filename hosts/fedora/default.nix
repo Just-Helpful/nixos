@@ -10,8 +10,9 @@ in
     ../../modules/terminal
 
     # enable the config for some apps
-    ../../modules/applications/kitty.nix
     ../../modules/applications/dictionary.nix
+    ../../modules/applications/kitty.nix
+    ../../modules/applications/localsend.nix
     ../../modules/applications/minecraft.nix
     ../../modules/applications/music.nix
     ../../modules/applications/notes.nix
