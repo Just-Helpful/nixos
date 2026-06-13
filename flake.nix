@@ -55,46 +55,43 @@
         # formatting for this flake, using treefmt and nixfmt-rfc-style
         formatter = treefmt.config.build.wrapper;
         checks.formatter = treefmt.config.build.check self;
+
+        # the actual nixos configuration
+        packages.nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs; };
+          modules = [
+            { nixpkgs.config.allowUnfree = true; }
+            { home-manager.users.default = import ./hosts/home; }
+            ./modules/nixos
+            ./hosts/nixos
+          ];
+        };
+
+        # a home manager configuration
+        packages.homeConfigurations.default = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.${system};
+          extraSpecialArgs = { inherit inputs; };
+          modules = [
+            { nixpkgs.config.allowUnfree = true; }
+            {
+              home = {
+                username = "default";
+                homeDirectory = "/home/default";
+              };
+            }
+            ./hosts/home
+          ];
+        };
+
+        # a home manager configuration
+        packages.homeConfigurations.fedora = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages.${system};
+          extraSpecialArgs = { inherit inputs; };
+          modules = [
+            { nixpkgs.config.allowUnfree = true; }
+            ./hosts/fedora
+          ];
+        };
       }
-    )
-
-    # flake outputs that rely on a (${output} = ...) layout, without `${system}`
-    // flake-utils.lib.eachDefaultSystemPassThrough (system: {
-      # the actual nixos configuration
-      nixosConfigurations.default = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs; };
-        modules = [
-          { nixpkgs.config.allowUnfree = true; }
-          { home-manager.users.default = import ./hosts/home; }
-          ./modules/nixos
-          ./hosts/nixos
-        ];
-      };
-
-      # a home manager configuration
-      homeConfigurations.default = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = { inherit inputs; };
-        modules = [
-          { nixpkgs.config.allowUnfree = true; }
-          {
-            home = {
-              username = "default";
-              homeDirectory = "/home/default";
-            };
-          }
-          ./hosts/home
-        ];
-      };
-
-      # a home manager configuration
-      homeConfigurations.fedora = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.${system};
-        extraSpecialArgs = { inherit inputs; };
-        modules = [
-          { nixpkgs.config.allowUnfree = true; }
-          ./hosts/fedora
-        ];
-      };
-    });
+    );
 }
