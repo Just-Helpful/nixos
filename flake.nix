@@ -48,8 +48,8 @@
     flake-utils.lib.eachDefaultSystem (
       system:
       let
-        # define a treefmt package per computer system
-        treefmt = treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} ./.github/config/treefmt.nix;
+        pkgs = nixpkgs.legacyPackages.${system};
+        treefmt = treefmt-nix.lib.evalModule pkgs ./.github/config/treefmt.nix;
       in
       {
         # formatting for this flake, using treefmt and nixfmt-rfc-style
@@ -69,7 +69,7 @@
 
         # a home manager configuration
         packages.homeConfigurations.default = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.${system};
+          inherit pkgs;
           extraSpecialArgs = { inherit inputs; };
           modules = [
             { nixpkgs.config.allowUnfree = true; }
@@ -85,7 +85,7 @@
 
         # a home manager configuration
         packages.homeConfigurations.fedora = home-manager.lib.homeManagerConfiguration {
-          pkgs = nixpkgs.legacyPackages.${system};
+          inherit pkgs;
           extraSpecialArgs = { inherit inputs; };
           modules = [
             { nixpkgs.config.allowUnfree = true; }
