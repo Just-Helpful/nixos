@@ -11,6 +11,7 @@
 {
   imports = [
     ./c
+    ./clojure
     ./elixir
     # ./julia
     ./node
