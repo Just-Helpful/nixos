@@ -1,3 +1,3 @@
 { pkgs, ... }: {
-  home.packages = with pkgs; [ leinengen ];
+  home.packages = with pkgs; [ leiningen ];
 }
