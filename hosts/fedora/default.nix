@@ -19,9 +19,6 @@ in
 
     # add systemd service modules
     ../../modules/services/searxng.nix
-
-    # apply some fedora specific patches
-    ../../modules/languages/rust/bevy.nix
   ];
 
   # but then disable the packages as we're running into GPU issues
