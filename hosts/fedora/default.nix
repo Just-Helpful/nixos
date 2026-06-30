@@ -37,7 +37,6 @@ in
     bashrcExtra = ''
       # support python user installs
       export PATH="$HOME/.local/bin:$PATH"
-      export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/lib64"
       nu
     '';
   };
@@ -62,5 +61,5 @@ in
 
   # And some services
   services.searxng.enable = true;
-services.ollama.enable = true;
+  services.ollama.enable = true;
 }
