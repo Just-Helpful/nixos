@@ -60,6 +60,7 @@ in
     ];
   };
 
-  # And SearXNG for search
+  # And some services
   services.searxng.enable = true;
+services.ollama.enable = true;
 }
