@@ -15,7 +15,6 @@ in
     ../../modules/applications/localsend.nix
     ../../modules/applications/minecraft.nix
     ../../modules/applications/music.nix
-    ../../modules/applications/notes.nix
 
     # add systemd service modules
     ../../modules/services/searxng.nix
@@ -37,7 +36,6 @@ in
     bashrcExtra = ''
       # support python user installs
       export PATH="$HOME/.local/bin:$PATH"
-      nu
     '';
   };
 
