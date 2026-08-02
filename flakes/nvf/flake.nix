@@ -33,7 +33,7 @@
 
       # define a treefmt package per computer system
       treefmt = eachSystem (
-        system: treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} ./.github/config/treefmt.nix
+        system: treefmt-nix.lib.evalModule nixpkgs.legacyPackages.${system} ../../.github/config/treefmt.nix
       );
     in
     {
