@@ -14,8 +14,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf = {
-      url = "github:notashelf/nvf";
+    nvim = {
+      url = ./flakes/nvf;
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -41,6 +41,7 @@
       home-manager,
       treefmt-nix,
       flake-utils,
+      nvim,
       ...
     }@inputs:
 
@@ -48,7 +49,14 @@
     flake-utils.lib.eachDefaultSystem (
       system:
       let
-        pkgs = nixpkgs.legacyPackages.${system};
+        # custom packages
+        neovim = nvim.packages.${system}.default;
+        overlays = [ (_: prev: prev // { inherit neovim; }) ];
+
+        # overlayed `pkgs` instance
+        pkgs = import nixpkgs {
+          inherit system overlays;
+        };
         treefmt = treefmt-nix.lib.evalModule pkgs ./.github/config/treefmt.nix;
       in
       {
