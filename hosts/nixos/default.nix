@@ -14,6 +14,7 @@
     ./network.nix
     ./services.nix
     ./localisation.nix
+    ./virtualisation.nix
   ];
 
   # Features
