@@ -12,6 +12,7 @@
   users.users.default = {
     description = "default";
     isNormalUser = lib.mkForce true;
+    initialPassword = "";
     shell = pkgs.nushell;
 
     group = "default";
