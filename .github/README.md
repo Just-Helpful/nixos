@@ -1,6 +1,9 @@
 <div align="center">
     <h1>Nix-Config</h1>
-    NixOS configuration for a personal laptop, heavily inspired by vimjoyer and NotAShelf
+    NixOS configuration for a personal laptop, heavily inspired by
+    <a href="https://www.youtube.com/@vimjoyer">vimjoyer</a>
+    and
+    <a href="https://github.com/NotAShelf">NotAShelf</a>
 </div>
 
 ---
