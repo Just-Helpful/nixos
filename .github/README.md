@@ -10,7 +10,7 @@
 
 ![An example desktop layout on this config](./docs/Desktop.png)
 
-> [!Info]- Try it out!
+> [!TIP]- Try it out!
 >
 > ```bash
 > nix run git+https://codeberg.org/Just-Helpful/nixos.git#vm
