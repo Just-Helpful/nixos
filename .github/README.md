@@ -10,11 +10,9 @@
 
 ![An example desktop layout on this config](./docs/Desktop.png)
 
-> [!TIP]-
->
-> ```bash
-> nix run git+https://codeberg.org/Just-Helpful/nixos.git#vm
-> ```
+```bash
+nix run git+https://codeberg.org/Just-Helpful/nixos.git#vm
+```
 
 ---
 
