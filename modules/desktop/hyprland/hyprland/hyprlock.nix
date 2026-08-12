@@ -1,10 +1,8 @@
 {
-  pkgs,
   lib,
   config,
   ...
 }:
-
 {
   options = {
     hyprlock.enable = lib.mkEnableOption "enables hyprlock";
