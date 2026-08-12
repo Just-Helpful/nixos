@@ -10,5 +10,6 @@
     ./pass.nix
     ./rofi.nix
     ./starship.nix
+    ./waybar/waybar.nix
   ];
 }
