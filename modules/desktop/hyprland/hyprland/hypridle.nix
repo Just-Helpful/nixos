@@ -1,10 +1,8 @@
 {
-  pkgs,
   lib,
   config,
   ...
 }:
-
 {
   options = {
     hypridle.enable = lib.mkEnableOption "enables hypridle";
