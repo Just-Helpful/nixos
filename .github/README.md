@@ -69,3 +69,5 @@ There's really quite a lot of sources I've used for this:
   for package overrides
 - [Nix Starter](https://github.com/Misterio77/nix-starter-configs/tree/main) for
   config structuring
+- [Andrea's Config](https://github.com/andy941/nix-configs) for a hyprland
+  config example
