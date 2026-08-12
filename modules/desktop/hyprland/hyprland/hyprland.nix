@@ -16,7 +16,6 @@
   };
 
   config = lib.mkIf config.hyprland.enable {
-
     waybar.enable = lib.mkDefault true;
     rofi.enable = lib.mkDefault true;
     # hyprpaper.enable = lib.mkDefault true;
