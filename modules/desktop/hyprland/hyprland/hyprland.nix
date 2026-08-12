@@ -19,7 +19,7 @@
 
     waybar.enable = lib.mkDefault true;
     rofi.enable = lib.mkDefault true;
-    hyprpaper.enable = lib.mkDefault true;
+    # hyprpaper.enable = lib.mkDefault true;
     hyprlock.enable = lib.mkDefault true;
     hypridle.enable = lib.mkDefault true;
     dunst.enable = lib.mkDefault true;
