@@ -4,7 +4,7 @@ let
 in
 {
   imports = [
-    ../../modules/desktop
+    ../../modules/desktop/gnome
     ../../modules/editors
     ../../modules/languages
     ../../modules/terminal

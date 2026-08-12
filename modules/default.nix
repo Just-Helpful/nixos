@@ -1,7 +1,7 @@
 {
   imports = [
     ./applications
-    ./desktop
+    ./desktop/gnome
     ./editors
     ./languages
     ./terminal
