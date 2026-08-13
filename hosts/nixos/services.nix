@@ -5,6 +5,12 @@
     # desktopManager.gnome.enable = true;
   };
 
+  programs.hyprland = {
+    enable = true;
+    withUSM = true;
+    xwayland.enable = true;
+  };
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
