@@ -7,7 +7,7 @@
 
   programs.hyprland = {
     enable = true;
-    withUSM = true;
+    withUWSM = true;
     xwayland.enable = true;
   };
 
