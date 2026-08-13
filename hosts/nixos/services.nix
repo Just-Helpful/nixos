@@ -5,11 +5,10 @@
     # desktopManager.gnome.enable = true;
   };
 
-  programs.hyprland = {
-    enable = true;
-    withUWSM = true;
-    xwayland.enable = true;
-  };
+  environment.pathsToLink = [
+    "/share/applications"
+    "/share/xdg-desktop-portal"
+  ];
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
