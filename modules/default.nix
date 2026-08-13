@@ -1,7 +1,7 @@
 {
   imports = [
     ./applications
-    # ./desktop/hyprland
+    ./desktop/hyprland
     ./editors
     ./languages
     ./terminal
