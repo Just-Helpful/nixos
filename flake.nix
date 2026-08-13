@@ -75,6 +75,7 @@
           ];
         };
         packages.vm = self.packages.${system}.nixosConfigurations.default.config.system.build.vm;
+        packages.default = self.packages.${system}.vm;
 
         # a home manager configuration
         packages.homeConfigurations.default = home-manager.lib.homeManagerConfiguration {
