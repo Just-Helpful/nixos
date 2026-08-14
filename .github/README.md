@@ -11,7 +11,7 @@
 ![An example desktop layout on this config](./docs/Desktop.png)
 
 ```bash
-nix run git+https://codeberg.org/Just-Helpful/nixos.git#vm
+nix run git+https://codeberg.org/Just-Helpful/nixos.git
 ```
 
 ---
