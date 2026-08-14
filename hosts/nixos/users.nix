@@ -9,6 +9,15 @@
     inputs.home-manager.nixosModules.default
   ];
 
+  # login manager
+  services.displayManager = {
+    gdm.enable = true;
+    autoLogin = {
+      enable = true;
+      user = "default";
+    };
+  };
+
   users.users.default = {
     description = "default";
     isNormalUser = lib.mkForce true;
