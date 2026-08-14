@@ -11,8 +11,7 @@
     # ./rofi.nix
     # ./starship.nix
     # ./waybar/waybar.nix
-    # hyprland default needs `kitty`
-    ../../applications/kitty.nix
+    ./kitty.nix
   ];
 
   wayland.windowManager.hyprland = {
