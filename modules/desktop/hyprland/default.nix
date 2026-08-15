@@ -10,7 +10,7 @@
     # ./pass.nix
     ./rofi.nix
     # ./starship.nix
-    # ./waybar/waybar.nix
+    ./waybar/waybar.nix
     ./kitty.nix
   ];
 
