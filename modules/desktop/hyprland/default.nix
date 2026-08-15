@@ -8,7 +8,7 @@
     # ./gtk-theme.nix
     # ./hyprland
     # ./pass.nix
-    # ./rofi.nix
+    ./rofi.nix
     # ./starship.nix
     # ./waybar/waybar.nix
     ./kitty.nix
