@@ -23,6 +23,7 @@
     xwayland.enable = true;
     # Whether to enable hyprland-session.target on hyprland startup
     systemd.enable = true;
+    systemd.variables = [ "--all" ];
 
     configType = "lua";
   };
