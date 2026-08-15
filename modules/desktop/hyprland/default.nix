@@ -21,8 +21,6 @@
     package = pkgs.hyprland;
     # Whether to enable XWayland
     xwayland.enable = true;
-
-    # Optional
     # Whether to enable hyprland-session.target on hyprland startup
     systemd.enable = true;
 
