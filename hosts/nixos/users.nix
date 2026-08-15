@@ -11,7 +11,7 @@
 
   # login manager
   services.displayManager = {
-    gdm.enable = true;
+    # gdm.enable = true;
     autoLogin = {
       enable = true;
       user = "default";
