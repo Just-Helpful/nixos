@@ -2,7 +2,7 @@
   imports = [
     # ./dunst.nix
     # ./flameshot.nix
-    # ./fonts.nix
+    ./fonts.nix
     # ./fzf.nix
     # ./git.nix
     # ./gtk-theme.nix
