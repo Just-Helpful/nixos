@@ -5,7 +5,7 @@
     bind = [
       {
         _args = [
-          "SUPER + /"
+          "SUPER + SLASH"
           (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"kitty\")")
         ];
       }
