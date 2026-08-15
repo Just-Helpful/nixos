@@ -1,4 +1,4 @@
-{
+{ lib, ... }: {
   programs.rofi = {
     enable = true;
     location = "center";
@@ -21,7 +21,12 @@
   wayland.windowManager.hyprland.settings = {
     bind = [
       # Execute Rofi with only the SUPER key
-      "SUPER, exec, pkill rofi || rofi -show drun"
+      {
+        _args = [
+          "SUPER + SUPER_L"
+          (lib.generators.mkLuaInline "hl.dsp.exec_cmd(\"pkill rofi || rofi -show drun\")")
+        ];
+      }
     ];
   };
 }
