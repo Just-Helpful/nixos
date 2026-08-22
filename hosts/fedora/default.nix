@@ -15,6 +15,7 @@ in
     ../../modules/applications/localsend.nix
     ../../modules/applications/minecraft.nix
     ../../modules/applications/music.nix
+    ../../modules/applications/vicinae.nix
 
     # add systemd service modules
     ../../modules/services/searxng.nix

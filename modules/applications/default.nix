@@ -13,6 +13,7 @@
     ./notes.nix
     ./office.nix
     ./spotify.nix
+    ./vicinae.nix
     ./zoom.nix
   ];
 }
