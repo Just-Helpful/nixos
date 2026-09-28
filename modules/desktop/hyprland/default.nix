@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   imports = [
+    ./anyrun.nix
     # ./dunst.nix
     # ./flameshot.nix
     ./fonts.nix
@@ -8,7 +9,7 @@
     # ./gtk-theme.nix
     # ./hyprland
     # ./pass.nix
-    ./rofi.nix
+    # ./rofi.nix
     # ./starship.nix
     ./waybar/waybar.nix
     ./kitty.nix

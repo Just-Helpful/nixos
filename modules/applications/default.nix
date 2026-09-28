@@ -1,5 +1,6 @@
 {
   imports = [
+    ./anyrun.nix
     ./backups.nix
     ./deja-dup.nix
     ./dictionary.nix
