@@ -11,6 +11,7 @@ in
 
     # enable the config for some apps
     ../../modules/applications/dictionary.nix
+    ../../modules/applications/firefox
     ../../modules/applications/kitty.nix
     ../../modules/applications/localsend.nix
     ../../modules/applications/minecraft.nix
