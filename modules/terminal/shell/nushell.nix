@@ -10,18 +10,18 @@
     };
 
     # If you ever move the config from ~/.config/nixos
-    # You'll either need to modify `$env.NIXOS_CONFIG`
-    # or overwrite the variable temporarily via "NIXOS_CONFIG=..."
+    # You'll either need to modify `$env.NIX_CONFIG_PATH`
+    # or overwrite the variable temporarily via "NIX_CONFIG_PATH=..."
     extraConfig = ''
       # Updates the versions of packages in `flake.lock`
       def nixup-flake [] {
-        nix flake update --flake $env.NIXOS_CONFIG
-        try { git -C $env.NIXOS_CONFIG commit flake.lock -m "chore: updates `flake.lock`" }
+        nix flake update --flake $env.NIX_CONFIG_PATH
+        try { git -C $env.NIX_CONFIG_PATH commit flake.lock -m "chore: updates `flake.lock`" }
       }
 
       # Updates the nixos config used to build
       def nixup-config [] {
-        sudo nixos-rebuild switch --flake $"($env.NIXOS_CONFIG)#default"
+        sudo nixos-rebuild switch --flake $"($env.NIX_CONFIG_PATH)#($env.NIX_CONFIG_NAME)"
       }
 
       # Updates the complete nixos config
@@ -32,17 +32,19 @@
 
       # Edit the nixos config
       def nixrc [] {
-        bash -c $"$EDITOR ($env.NIXOS_CONFIG)"
+        bash -c $"$EDITOR ($env.NIX_CONFIG_PATH)"
       }
 
       # Updates the versions of packages in home manager `flake.lock`
       def homeup-flake [] {
-        nix flake update --flake $env.HOME_CONFIG
-        try { git -C $env.HOME_CONFIG commit flake.lock -m "chore: updates `flake.lock`" }
+        nix flake update --flake $env.NIX_CONFIG_PATH
+        try { git -C $env.NIX_CONFIG_PATH commit flake.lock -m "chore: updates `flake.lock`" }
       }
 
-      # Shortcut for home-manager switch
-      alias homeup-config = home-manager switch
+      # Updates the home-manager config
+      def homeup-config [] {
+        home-manager switch --flake $"($env.NIX_CONFIG_PATH)#($env.NIX_CONFIG_NAME)"
+      }
 
       # Updates the complete home manager config
       def homeup [] {
@@ -52,7 +54,7 @@
 
       # Edit the home manager config
       def homerc [] {
-        bash -c $"$EDITOR ($env.HOME_CONFIG)"
+        bash -c $"$EDITOR ($env.NIX_CONFIG_PATH)"
       }
 
       # # Handling autocompletion

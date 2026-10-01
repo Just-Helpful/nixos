@@ -10,7 +10,7 @@
   ];
 
   home.sessionVariables = {
-    NIXOS_CONFIG = "${config.home.homeDirectory}/.config/nixos";
-    HOME_CONFIG = "${config.home.homeDirectory}/.config/home-manager";
+    NIX_CONFIG_PATH = "${config.home.homeDirectory}/.config/nixos";
+    NIX_CONFIG_NAME = "default"; # the attribute name used for config outputs, i.e. ".#<NIX_CONFIG_NAME>"
   };
 }
