@@ -46,8 +46,8 @@
 
       # Updates the complete home manager config
       def homeup [] {
-        hm-up-flake
-        hm-up-config
+        homeup-flake
+        homeup-config
       }
 
       # Edit the home manager config
