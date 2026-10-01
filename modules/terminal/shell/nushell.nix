@@ -35,12 +35,6 @@
         bash -c $"$EDITOR ($env.NIX_CONFIG_PATH)"
       }
 
-      # Updates the versions of packages in home manager `flake.lock`
-      def homeup-flake [] {
-        nix flake update --flake $env.NIX_CONFIG_PATH
-        try { git -C $env.NIX_CONFIG_PATH commit flake.lock -m "chore: updates `flake.lock`" }
-      }
-
       # Updates the home-manager config
       def homeup-config [] {
         home-manager switch --flake $"($env.NIX_CONFIG_PATH)#($env.NIX_CONFIG_NAME)"
@@ -48,14 +42,12 @@
 
       # Updates the complete home manager config
       def homeup [] {
-        homeup-flake
+        nixup-flake
         homeup-config
       }
 
       # Edit the home manager config
-      def homerc [] {
-        bash -c $"$EDITOR ($env.NIX_CONFIG_PATH)"
-      }
+      alias homerc = nixrc
 
       # # Handling autocompletion
       let carapace_completer = {|spans| 
