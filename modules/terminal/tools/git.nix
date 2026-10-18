@@ -2,6 +2,7 @@
 {
   programs.git = {
     enable = true;
+    lfs.enable = true;
     signing = {
       key = "${config.home.homeDirectory}/.ssh/id_ssh.pub";
       format = "ssh";
