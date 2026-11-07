@@ -4,5 +4,6 @@
     "workbench.colorTheme" = "Atom One Dark";
     "chat.disableAIFeatures" = true;
     "workbench.secondarySideBar.defaultVisibility" = false;
+    "workbench.editor.pinnedTabSizing" = "compact";
   };
 }
