@@ -57,7 +57,7 @@ in
 
     home.sessionVariables = envVars;
 
-    systemd.user.services.searxng = lib.mkIf pkgs.stdenv.isLinux {
+    systemd.user.services.searxng = lib.mkIf pkgs.stdenv.hostPlatform.isLinux {
       Unit = {
         Description = "Service for the SearXNG meta search engine";
         After = [ "network.target" ];
@@ -74,7 +74,7 @@ in
       };
     };
 
-    launchd.agents.searxng = lib.mkIf pkgs.stdenv.isDarwin {
+    launchd.agents.searxng = lib.mkIf pkgs.stdenv.hostPlatform.isDarwin {
       enable = true;
       config = {
         ProgramArguments = [
