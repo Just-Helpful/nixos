@@ -2,7 +2,7 @@
 {
   programs.nushell = {
     enable = true;
-
+    loadSessionVariables = true;
     environmentVariables = config.home.sessionVariables;
 
     settings = {
