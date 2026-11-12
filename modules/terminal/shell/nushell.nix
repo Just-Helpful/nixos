@@ -102,10 +102,8 @@
     '';
   };
 
-  programs.carapace = {
-    enable = true;
-    enableNushellIntegration = true;
-  };
-
+  programs.direnv.enable = true;
+  programs.carapace.enable = true;
   programs.nix-your-shell.enable = true;
+  home.shell.enableNushellIntegration = true;
 }
