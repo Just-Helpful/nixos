@@ -1,1 +1,4 @@
-{ programs.zsh.enable = true; }
+{
+  home.shell.enableZshIntegration = true;
+  programs.zsh.enable = true;
+}
