@@ -7,6 +7,7 @@
     ./nushell.nix
     ./starship.nix
     ./command-not-found.nix
+    ./zsh.nix
   ];
 
   home.sessionVariables = {
