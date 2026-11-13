@@ -4,6 +4,7 @@
 { config, ... }:
 {
   imports = [
+    ./bash.nix
     ./nushell.nix
     ./starship.nix
     ./command-not-found.nix
