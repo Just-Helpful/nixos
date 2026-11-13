@@ -11,6 +11,9 @@
   ];
 
   programs.rclone.enable = true;
+  programs.direnv.enable = true;
+  programs.carapace.enable = true;
+  programs.nix-your-shell.enable = true;
 
   home.packages = with pkgs; [
     ripgrep

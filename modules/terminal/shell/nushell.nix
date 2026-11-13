@@ -1,5 +1,7 @@
 { config, ... }:
 {
+  home.shell.enableNushellIntegration = true;
+
   programs.nushell = {
     enable = true;
     loadSessionVariables = true;
@@ -101,9 +103,4 @@
       }
     '';
   };
-
-  programs.direnv.enable = true;
-  programs.carapace.enable = true;
-  programs.nix-your-shell.enable = true;
-  home.shell.enableNushellIntegration = true;
 }
