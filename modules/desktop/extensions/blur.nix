@@ -13,12 +13,9 @@
 
     "org/gnome/shell/extensions/blur-my-shell" = {
       "applications/dynamic-opacity" = false;
-      "applications/enable-all" = true;
-      "applications/blacklist" = [
-        "Plank"
-        "com.desktop.ding"
-        "Conky"
-        "org.mozilla.firefox"
+      "applications/enable-all" = false;
+      "applications/whitelist" = [
+        "kitty"
       ];
     };
   };
