@@ -10,9 +10,13 @@
 
 ![An example desktop layout on this config](./docs/Desktop.png)
 
+<div align="center">
+
 ```bash
 nix run git+https://codeberg.org/Just-Helpful/nixos.git
 ```
+
+</div>
 
 ---
 
